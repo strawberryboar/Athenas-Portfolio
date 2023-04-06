@@ -2,17 +2,18 @@ import catPng from '../assets/cat.png';
 import catPng2 from '../assets/cat2.png';
 import catPng3 from '../assets/cat3.png';
 import catPng4 from '../assets/cat4.png';
+import header1 from '../assets/header1.png';
 import './Homepage.css';
+
 
 export default function Homepage() {
     return(
     <div className="Homepage">
-        <div className='homeWrapper'>
-        <header className="Home-header">
-            <h1>
-            Portfolio
-            </h1>
-        </header>
+        <div className='headerWrap'>
+            <header className='headerBox'>
+                <h1>Peepee</h1>
+                <p>Content</p>
+            </header>
         </div>
         <div className='introWrap'>
         <div className='introBox' id='first'>
@@ -44,6 +45,18 @@ export default function Homepage() {
             <img src={catPng4}></img>
             </div>
         </div>
+        </div>
+        <div className='divBox' id='divBox1'>
+            <h1>Box</h1>
+            <p>Content</p>
+        </div>
+        <div className='divBox' id='divBox2'>
+            <h1>Box</h1>
+            <p>Content</p>
+        </div>
+        <div className='divBox' id='divBox3'>
+            <h1>Box</h1>
+            <p>Content</p>
         </div>
     </div>
     )

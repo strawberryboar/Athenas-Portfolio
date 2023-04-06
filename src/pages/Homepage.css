@@ -1,5 +1,4 @@
 .Homepage {
-    background-color: #282c34;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,7 +13,7 @@
     border: 1px solid black;
     display: flex;
     flex-direction: row;
-    margin: 5%;
+    margin: 0 5%;
   }
   
   .introBox {
@@ -48,6 +47,29 @@
 
   .siteBox img {
     min-width: 100px;
+  }
+
+  .headerWrap {
+    height: 20rem;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .divBox {
+    border: solid black 1px;
+    width: 85%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .headerWrap h1 {
+    font-size: 64px;
   }
 
   @media (max-width: 800px) {

@@ -1,0 +1,17 @@
+Footer {
+    color:white;
+    text-align: center;
+}
+
+.footerWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+}
+
+.footerBox {
+    border: solid black 1px;
+    width: 25%;
+}
