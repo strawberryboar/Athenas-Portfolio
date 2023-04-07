@@ -10,7 +10,7 @@ export default function Homepage() {
     return(
     <div className="Homepage">
         <div className='headerWrap'>
-            <header className='headerBox'>
+            <header className='header'>
                 <h1>Peepee</h1>
                 <p>Content</p>
             </header>

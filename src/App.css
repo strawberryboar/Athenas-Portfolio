@@ -4,3 +4,13 @@
 * {
     background-color: #282c34;
 }
+
+.Contact, .Homepage {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 1vmin);
+    color: white;
+    align-items: center;
+    margin: 0 auto;
+  }

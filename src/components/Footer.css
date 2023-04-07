@@ -15,3 +15,12 @@ Footer {
     border: solid black 1px;
     width: 25%;
 }
+
+.footerBox a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerBox a:hover {
+    color: pink;
+}
