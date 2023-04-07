@@ -10,7 +10,6 @@ function App() {
   return (
     <>
     <Router>
-      <Navbar />
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/contact' element={<Contact/>}/>

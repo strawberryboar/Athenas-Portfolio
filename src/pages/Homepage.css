@@ -15,62 +15,95 @@
   .introWrap img {
     max-width: 100%;
   }
-  
-  .siteWrap {
-    padding: 2%;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .siteBox {
-    border: 1px solid black;
-    height: 50%;
-    padding: 2%;
-    text-align: center;
-  }
-  .siteBox:nth-child(n+2) {
-    margin-left: 10px;
-  }
-
-  .siteBox img {
-    min-width: 100px;
-  }
 
   .headerWrap {
     height: 20rem;
-    border: 1px solid black;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: center;
-  }
-
-  .divBox {
-    border: solid black 1px;
-    width: 85%;
-    height: 20rem;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 2%;
   }
 
   .headerWrap h1 {
     font-size: 64px;
   }
 
-  @media (max-width: 800px) {
-    .siteWrap {
-        display: flex;
-        flex-direction:column;
-        width: 100%;
-    }
-    .siteBox:nth-child(n+2) {
-        margin-top: 3px;
-        margin-left: 0;
-      }
+  .header img {
+    max-width: 300px;
+  }
+
+.learnBtn {
+  width: 200px;
+  height: 75px;
+  color: white;
+  border: 3px solid white;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.learnBtn:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+  scale: 1.2;
+}
+
+  .divBox {
+    border: solid black 1px;
+    width: 85%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 2%;
+  }
+
+  #divBox2 {
+    margin-left: 6%;
+  }
+
+  #divBox3 {
+    margin-left: 12%;
+  }
+
+  /* MOVE THIS LEFT */
+  .date {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+  }
+
+  .projects {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .projBoxContain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .projBox {
+    border: solid black 1px;
+    width: 30%;
+    height: 300px;
+  }
+
+  .projBox:hover {
+    opacity: 50%;
+    transition: 0.3s;
+  }
+
+  .projects img {
+    width: 90%;
   }
