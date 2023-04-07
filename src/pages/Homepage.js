@@ -2,6 +2,10 @@ import catPng from '../assets/cat.png';
 import catPng2 from '../assets/cat2.png';
 import catPng3 from '../assets/cat3.png';
 import catPng4 from '../assets/cat4.png';
+import Email from '../assets/email.svg';
+import Linkedin from '../assets/linkedin.svg';
+import Github from '../assets/github.svg';
+import Twitter from '../assets/twitter.svg';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import Siteboxes from '../components/Siteboxes';
@@ -42,26 +46,40 @@ export default function Homepage() {
         </div>
         <div className='divBox' id='divBox3'>
             <h1>Socials</h1>
-            <span><Link to='/'>Email</Link></span>
-            <span><Link to='/'>Github</Link></span>
-            <span><Link to='/'>Twitter</Link></span>
-            <span><Link to='/'>LinkedIn</Link></span>
+            <div className='linkWrap'>
+                <div className='linkBox'>
+                <Link to='mailto:a.petrovich.dev@gmail.com'><img src={Email}></img></Link>
+                <span><Link to='/'>Email</Link></span>
+                </div>
+                <div className='linkBox'>
+                <img src={Github}></img>
+                <span><Link to='/'>Github</Link></span>
+                </div>
+                <div className='linkBox'>
+                <img src={Twitter}></img>
+                <span><Link to='/'>Twitter</Link></span>
+                </div>
+                <div className='linkBox'>
+                <img src={Linkedin}></img>
+                <span><Link to='/'>LinkedIn</Link></span>
+                </div>
+            </div>
         </div>
         <div className='projects'>
             <h1>My Work|</h1>
             <div className='projBoxContain'>
             <div className='projBox'>
-                <p>website</p>
+                <h2>HAUL'R</h2>
+                <img src={catPng}></img>
+                <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
+            </div>
+            <div className='projBox'>
+                <h2>Meal Assistant</h2>
                 <img src={catPng}></img>
                 <p>peepee</p>
             </div>
             <div className='projBox'>
-                <p>website</p>
-                <img src={catPng}></img>
-                <p>peepee</p>
-            </div>
-            <div className='projBox'>
-                <p>website</p>
+                <h2>website</h2>
                 <img src={catPng}></img>
                 <p>peepee</p>
             </div>
