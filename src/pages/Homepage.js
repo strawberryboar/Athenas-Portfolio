@@ -1,3 +1,4 @@
+import React, { useRef } from 'react';
 import catPng from '../assets/cat.png';
 import catPng2 from '../assets/cat2.png';
 import catPng3 from '../assets/cat3.png';
@@ -13,10 +14,17 @@ import './Homepage.css';
 
 
 export default function Homepage() {
+
+    const learnRef = useRef();
+
+    function handleClick() {
+        learnRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+
     return(
     <div className="Homepage">
         <div className='date'>
-            <p>current date</p>
+            <p>current date time</p>
         </div>
         <div className='headerWrap'>
             <header className='header'>
@@ -24,7 +32,8 @@ export default function Homepage() {
                 <h1>Good Evening, I'm Pee-Pee.</h1>
                 <h2>I'm a full-stack web developer.</h2>
                 <Link src='/'>
-                    <button className='learnBtn'>
+                    <button className='learnBtn'
+                    onClick={handleClick}>
                         Learn More
                     </button>
                 </Link>
@@ -33,12 +42,26 @@ export default function Homepage() {
         {/* <Navbar /> */}
         <div className='header'>
             {/* animate this */}
-            <h1>whoami|</h1>
+            <h1 ref={learnRef}>whoami|</h1>
         </div>
         {/* <Siteboxes /> */}
         <div className='divBox' id='divBox1'>
-            <h1>About Me</h1>
-            <p>Binger</p>
+        <h1>About Me</h1>
+            <div className='linkWrap' id='aboutWrap'>
+                <div className='linkBox' id='aboutBox'>
+                <p>Currently I am the lead web developer for HaulrCorporation. My workday is balanced with React, CSS, JS, GraphQL, Apache, and more. I am open to new opportunities and collaborations.</p>
+                </div>
+                <div className='linkBox' id='aboutBox'>
+                    <p>
+                        Besides being a full time web developer, I'm also an illustrator! I run a sticker shop and vend at local events.
+                    </p>
+                </div>
+                <div className='linkBox' id='aboutBox'>
+                    <p>I am open to new opportunities and collaborations! 
+                        <Link to='/'>Please message me here.</Link>
+                    </p>
+                </div>
+            </div>
         </div>
         <div className='divBox' id='divBox2'>
             <h1>What I Offer</h1>
@@ -49,19 +72,15 @@ export default function Homepage() {
             <div className='linkWrap'>
                 <div className='linkBox'>
                 <Link to='mailto:a.petrovich.dev@gmail.com'><img src={Email}></img></Link>
-                <span><Link to='/'>Email</Link></span>
                 </div>
                 <div className='linkBox'>
-                <img src={Github}></img>
-                <span><Link to='/'>Github</Link></span>
+                <Link to='https://github.com/strawberryboar'><img src={Github}></img></Link>
                 </div>
                 <div className='linkBox'>
-                <img src={Twitter}></img>
-                <span><Link to='/'>Twitter</Link></span>
+                <Link to='https://twitter.com/APetrovichDev'><img src={Twitter}></img></Link>
                 </div>
                 <div className='linkBox'>
-                <img src={Linkedin}></img>
-                <span><Link to='/'>LinkedIn</Link></span>
+                <Link to='https://www.linkedin.com/in/athena-petrovich-b238321a7/'><img src={Linkedin}></img></Link>
                 </div>
             </div>
         </div>
