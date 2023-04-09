@@ -95,6 +95,7 @@ p {
   .linkWrap {
     display: flex;
     flex-direction: row;
+    overflow: scroll;
   }
 
   .linkBox {
@@ -117,18 +118,17 @@ p {
   transition: 0.3s;
   scale: 1.2;
 }
-/* WIP here */
+
 #aboutWrap {
   display: flex;
   flex-direction: row;
-
+ justify-content: center;
 }
 
 #aboutBox {
   width: 35%;
 }
 
-  /* MOVE THIS LEFT */
   .date {
     display: flex;
     flex-direction: row;
@@ -156,6 +156,7 @@ p {
     justify-content: center;
     align-items: center;
     margin-top: 2%;
+    height: 20%;
   }
 
   .projBox {
@@ -164,6 +165,9 @@ p {
     height: 30%;
     padding-bottom: 10px;
     margin-bottom: 2%;
+    height: 500px;
+    overflow: scroll;
+    padding: 2%;
   }
 
   .projects img:hover {
@@ -173,4 +177,9 @@ p {
 
   .projects img {
     max-width: 90%;
+  }
+/* move this underneath h1 */
+  .divBox hr {
+    position: absolute;
+    width: 35%;
   }
