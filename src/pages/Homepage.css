@@ -105,6 +105,11 @@ p {
     margin-bottom: 5%;
   }
 
+  .titles {
+    display: flex;
+    flex-direction: row;
+  }
+
   .projBoxContain {
     display: flex;
     flex-direction: row;
@@ -120,14 +125,7 @@ p {
     padding: 2%;
   }
 
-  .projects img:hover {
-    opacity: 50%;
-    transition: 0.3s;
-  }
 
-  .projects img {
-    max-width: 90%;
-  }
 /* move this underneath h1 */
   .divBox hr {
     position: absolute;

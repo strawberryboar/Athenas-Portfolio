@@ -89,19 +89,23 @@ export default function Homepage() {
         </div>
         <div className='projects' ref={projRef}>
             <h1>My Work|</h1>
+            <div className='titles'>
+            <h2>HAUL'R</h2>
+            <h2>Meal Assistant</h2>
+            <h2>website</h2>
+            </div>
             <div className='projBoxContain'>
             <div className='projBox'>
-                <h2>HAUL'R</h2>
                 <LinkButton />
                 <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
             </div>
             <div className='projBox'>
-                <h2>Meal Assistant</h2>
+
                 <LinkButton />
-                <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes. This application can even generate random recipes if they are not sure what they want.</p>
+                <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
             </div>
             <div className='projBox'>
-                <h2>website</h2>
+
                 <LinkButton />
                 <p>peepee</p>
             </div>

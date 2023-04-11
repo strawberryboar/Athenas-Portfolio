@@ -1,8 +1,9 @@
 .App {
     margin: 0 auto;
 }
-* {
-    background-color: #262d36;
+
+.Homepage, Footer {
+  background-color: #262d36;
 }
 
 .Contact {
@@ -23,3 +24,32 @@
   a:hover {
     color: pink;
   }
+
+  @media (max-width: 800px){
+    .footerBox img {
+        width: 100%;
+    }
+
+    .Homepage p {
+      font-size: 20px;
+    }
+
+    .Homepage {
+      padding: 2%;
+    }
+    
+    .projBox {
+      overflow: scroll;
+      max-height: 70dvh;
+    }
+
+    .titles {
+      margin: 0 10%;
+    }
+}
+
+@media (max-width: 600px) {
+  .projBox {
+    max-height: 50dvh;
+  }
+}

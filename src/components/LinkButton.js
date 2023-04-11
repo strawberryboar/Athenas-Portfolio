@@ -14,8 +14,10 @@ export default function LinkButton() {
             onMouseLeave={() => setIsShown(false)}>
         </img>
             {isShown && (
-                <button className='linkBtn'>
-                    <a href='/'>nyoom</a>
+                <button className='linkBtn'
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}>
+                    <a href='https://strawberryboar.github.io/Meal-Assistant/' target="_blank">nyoom</a>
                 </button>
             )}
         </div>

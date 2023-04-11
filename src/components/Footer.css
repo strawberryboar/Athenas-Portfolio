@@ -40,3 +40,9 @@ Footer p {
     opacity: 50%;
     font-size: 20px;
 }
+
+@media (max-width: 800px){
+    .footerBox img {
+        width: 100%;
+    }
+}
