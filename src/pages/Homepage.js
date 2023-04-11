@@ -129,10 +129,6 @@ export default function Homepage() {
             </div>
             </div>
         </div>
-        <div className='divBox' id='divBox2'>
-            <h1>Languages I Use</h1>
-            <p>Content</p>
-        </div>
     </div>
     )
 }

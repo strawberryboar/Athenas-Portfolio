@@ -76,19 +76,6 @@ p {
     text-align: center;
   }
 
-  #divBox2 {
-    margin-left: 6%;
-  }
-
-  #divBox3 {
-    margin-left: 12%;
-  }
-
-  .linkWrap {
-    display: flex;
-    flex-direction: row;
-  }
-
   .linkBox {
     display: flex;
     flex-direction: column;
@@ -96,24 +83,11 @@ p {
     align-items: center;
   }
 
-  .linkBox:nth-child(n+2){
-    margin-left: 5%;
-  }
-
-.linkBox img {
-  width: 100px;
-  height: 100px;
-}
-
-.linkBox img:hover {
-  transition: 0.3s;
-  scale: 1.2;
-}
-
 #aboutWrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
  justify-content: center;
+ align-items: center;
 }
 
   .date {
@@ -132,7 +106,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     margin-bottom: 5%;
   }
@@ -140,17 +113,13 @@ p {
   .projBoxContain {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 2%;
     height: 20%;
   }
 
   .projBox {
-    border: solid black 1px;
     width: 30%;
     height: 30%;
-    padding-bottom: 10px;
     margin-bottom: 2%;
     height: 50rem;
     padding: 2%;
