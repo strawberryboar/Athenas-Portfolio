@@ -1,6 +1,10 @@
 Footer {
     color:white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .footerWrap {
@@ -8,7 +12,7 @@ Footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: solid black 1px;
+    width: 50%;
 }
 
 .footerBox {
