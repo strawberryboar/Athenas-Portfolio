@@ -8,11 +8,14 @@ import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import Siteboxes from '../components/Siteboxes';
 import './Homepage.css';
+import Greeting from '../components/Greeting';
+import LinkButton from '../components/LinkButton';
 
 
 export default function Homepage() {
 
     const learnRef = useRef();
+    const projRef = useRef()
 
     function handleClick() {
         learnRef.current.scrollIntoView({ behavior: "smooth" });
@@ -45,7 +48,7 @@ export default function Homepage() {
         <div className='headerWrap'>
             <header className='header'>
                 <img src={catPng} />
-                <h1>Good Evening, I'm Pee-Pee.</h1>
+                <Greeting />
                 <h2>I'm a full-stack web developer.</h2>
                 <Link src='/'>
                     <button className='learnBtn'
@@ -77,54 +80,29 @@ export default function Homepage() {
             </div>
                 {/* Doesn't link at the moment */}
             <Link src='/'>
-                <button className='projBtn'>
+                <button className='projBtn' onClick={() => {
+                    handleClick(projRef)
+                }}>
                     V
                 </button>
             </Link>
         </div>
-        <div className='projects'>
+        <div className='projects' ref={projRef}>
             <h1>My Work|</h1>
             <div className='projBoxContain'>
             <div className='projBox'>
                 <h2>HAUL'R</h2>
-                <button
-                onMouseEnter={() => setIsShown(true)}
-                onMouseLeave={() => setIsShown(false)}>
-                <img src={catPng}></img>
-                </button>
-                {isShown && (
-                    <div>
-                        appears when you hover over the button
-                    </div>
-                )}
+                <LinkButton />
                 <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
             </div>
             <div className='projBox'>
                 <h2>Meal Assistant</h2>
-                <button
-                onMouseEnter={() => setIsShown(true)}
-                onMouseLeave={() => setIsShown(false)}>
-                <img src={catPng}></img>
-                </button>
-                {isShown && (
-                    <div>
-                        appears when you hover over the button
-                    </div>
-                )}
+                <LinkButton />
                 <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes. This application can even generate random recipes if they are not sure what they want.</p>
             </div>
             <div className='projBox'>
                 <h2>website</h2>
-                <button
-                onMouseEnter={() => setIsShown(true)}
-                onMouseLeave={() => setIsShown(false)}>
-                <img src={catPng}></img>
-                </button>
-                {isShown && (
-                    <div>
-                        appears when you hover over the button
-                    </div>
-                )}
+                <LinkButton />
                 <p>peepee</p>
             </div>
             </div>
