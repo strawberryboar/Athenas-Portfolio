@@ -35,3 +35,8 @@ Footer {
     transition: 0.3s;
     scale: 1.2;
 }
+
+Footer p {
+    opacity: 50%;
+    font-size: 20px;
+}

@@ -38,12 +38,8 @@ export default function Homepage() {
             </header>
         </div>
         {/* <Navbar /> */}
-        <div className='header'>
-            {/* animate this */}
-            <h1 ref={learnRef}>whoami|</h1>
-        </div>
         {/* <Siteboxes /> */}
-        <div className='divBox' id='divBox1'>
+        <div className='divBox' id='divBox1' ref={learnRef}>
         <h1>About Me</h1>
         <hr></hr>
             <div className='linkWrap' id='aboutWrap'>
@@ -61,6 +57,7 @@ export default function Homepage() {
                     </p>
                 </div>
             </div>
+            {/* Insert arrow button here */}
         </div>
         <div className='projects'>
             <h1>My Work|</h1>
