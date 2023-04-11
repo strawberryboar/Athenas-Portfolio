@@ -3,6 +3,7 @@ import catPng from '../assets/cat.png';
 import catPng2 from '../assets/cat2.png';
 import catPng3 from '../assets/cat3.png';
 import catPng4 from '../assets/cat4.png';
+import dogPng5 from '../assets/dog5.png';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import Siteboxes from '../components/Siteboxes';
@@ -23,6 +24,23 @@ export default function Homepage() {
     <div className="Homepage">
         <div className='date'>
             <p>current date time</p>
+        </div>
+        <div className='langContain'>
+            <div className='lang' id='lang1'>
+                <img src={catPng} />
+            </div>
+            <div className='lang' id='lang2'>
+                <img src={catPng2} />
+            </div>
+            <div className='lang' id='lang3'>
+                <img src={catPng3} />
+            </div>
+            <div className='lang' id='lang4'>
+                <img src={catPng4} />
+            </div>
+            <div className='lang' id='lang5'>
+                <img src={dogPng5} />
+            </div>
         </div>
         <div className='headerWrap'>
             <header className='header'>
@@ -57,7 +75,12 @@ export default function Homepage() {
                     </p>
                 </div>
             </div>
-            {/* Insert arrow button here */}
+                {/* Doesn't link at the moment */}
+            <Link src='/'>
+                <button className='projBtn'>
+                    V
+                </button>
+            </Link>
         </div>
         <div className='projects'>
             <h1>My Work|</h1>

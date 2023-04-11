@@ -48,7 +48,7 @@ p {
   align-items: center;
 }
 
-.learnBtn {
+.learnBtn, .projBtn  {
   width: 200px;
   height: 75px;
   color: white;
@@ -57,7 +57,7 @@ p {
   font-size: 20px;
 }
 
-.learnBtn:hover {
+.learnBtn:hover, .projBtn:hover {
   background-color: black;
   color: white;
   transition: 0.3s;
@@ -170,6 +170,62 @@ p {
     width: 35%;
   }
 
-  .projBox button {
+  button {
     border: none;
+  }
+
+  .langContain .lang {
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    animation: lang 4s infinite;
+  }
+
+  .lang {
+    width: 100px;
+  }
+
+  #lang1 {
+    animation-name: lang;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+
+  #lang2 {
+    animation-name: lang;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  
+  #lang3 {
+    animation-name: lang;
+    animation-duration: 4s;
+    animation-delay: 3s;
+  }
+
+  #lang4 {
+    animation-name: lang;
+    animation-duration: 4s;
+    animation-delay: 4s;
+  }
+
+  #lang5 {
+    animation-name: lang;
+    animation-duration: 4s;
+    animation-delay: 5s;
+  }
+
+  #lang6 {
+    animation-name: lang;
+    animation-duration: 4s;
+    animation-delay: 6s;
+  }
+
+  @keyframes lang {
+    0%  { top:0dvh; opacity: 0;}
+    25%  { top:25dvh; opacity: 50%;}
+    50%  { top:50dvh; opacity: 1;}
+    75%  { top:75dvh; opacity: 75%;}
+    100% { top:100dvh; opacity: 0;}
   }

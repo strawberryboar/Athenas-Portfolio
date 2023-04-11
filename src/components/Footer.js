@@ -12,16 +12,16 @@ export default function Footer() {
         <footer>
         <div className='footerWrap'>
             <div className='footerBox'>
-                <Link to='mailto:a.petrovich.dev@gmail.com'><img src={Email}></img></Link>
+                <a href='mailto:a.petrovich.dev@gmail.com' target='_blank'><img src={Email}></img></a>
                 </div>
                 <div className='footerBox'>
-                <Link to='https://github.com/strawberryboar'><img src={Github}></img></Link>
+                <a href='https://github.com/strawberryboar' target='_blank'><img src={Github}></img></a>
                 </div>
                 <div className='footerBox'>
-                <Link to='https://twitter.com/APetrovichDev'><img src={Twitter}></img></Link>
+                <a href='https://twitter.com/APetrovichDev' target="_blank"><img src={Twitter}></img></a>
                 </div>
                 <div className='footerBox'>
-                <Link to='https://www.linkedin.com/in/athena-petrovich-b238321a7/'><img src={Linkedin}></img></Link>
+                <a href='https://www.linkedin.com/in/athena-petrovich-b238321a7/' target='_blank'><img src={Linkedin}></img></a>
                 </div>
         </div>
         <p>&copy;peepee</p>
