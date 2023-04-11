@@ -3,10 +3,6 @@ import catPng from '../assets/cat.png';
 import catPng2 from '../assets/cat2.png';
 import catPng3 from '../assets/cat3.png';
 import catPng4 from '../assets/cat4.png';
-import Email from '../assets/email.svg';
-import Linkedin from '../assets/linkedin.svg';
-import Github from '../assets/github.svg';
-import Twitter from '../assets/twitter.svg';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import Siteboxes from '../components/Siteboxes';
@@ -52,7 +48,7 @@ export default function Homepage() {
         <hr></hr>
             <div className='linkWrap' id='aboutWrap'>
                 <div className='linkBox' id='aboutBox'>
-                <p>Currently I am the lead web developer for HaulrCorporation. My workday is balanced with React, CSS, JS, GraphQL, Apache, and more. I am open to new opportunities and collaborations.</p>
+                <p>Currently I am the lead web developer for HaulrCorporation. My workday is balanced with React, CSS, JS, GraphQL, Apache, and more.</p>
                 </div>
                 <div className='linkBox' id='aboutBox'>
                     <p>
@@ -117,24 +113,6 @@ export default function Homepage() {
             <h1>Languages I Use</h1>
             <p>Content</p>
         </div>
-        <div className='divBox' id='divBox3'>
-            <h1>Socials</h1>
-            <div className='linkWrap'>
-                <div className='linkBox'>
-                <Link to='mailto:a.petrovich.dev@gmail.com'><img src={Email}></img></Link>
-                </div>
-                <div className='linkBox'>
-                <Link to='https://github.com/strawberryboar'><img src={Github}></img></Link>
-                </div>
-                <div className='linkBox'>
-                <Link to='https://twitter.com/APetrovichDev'><img src={Twitter}></img></Link>
-                </div>
-                <div className='linkBox'>
-                <Link to='https://www.linkedin.com/in/athena-petrovich-b238321a7/'><img src={Linkedin}></img></Link>
-                </div>
-            </div>
-        </div>
-        
     </div>
     )
 }
