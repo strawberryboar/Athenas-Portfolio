@@ -50,6 +50,7 @@ p {
   border: 3px solid white;
   border-radius: 3px;
   font-size: 20px;
+  background-color: pink;
 }
 
 .learnBtn:hover, .projBtn:hover {
@@ -85,17 +86,6 @@ p {
  align-items: center;
 }
 
-  .date {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    justify-content: left;
-    opacity: 50%;
-    position:absolute;
-    margin-left: 2%;
-  }
-
-
   .projects {
     width: 100%;
     display: flex;
@@ -108,6 +98,8 @@ p {
   .titles {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
   }
 
   .projBoxContain {
@@ -141,7 +133,7 @@ p {
     display: flex;
     flex-direction: column;
     position: absolute;
-    animation: lang 4s infinite;
+    animation: lang 3s infinite linear;
   }
 
   .lang {
@@ -150,44 +142,54 @@ p {
 
   #lang1 {
     animation-name: lang;
-    animation-duration: 4s;
-    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
   }
 
   #lang2 {
     animation-name: lang;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-delay: 1s;
   }
   
   #lang3 {
     animation-name: lang;
-    animation-duration: 4s;
-    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
   }
 
   #lang4 {
     animation-name: lang;
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-delay: 2s;
   }
 
   #lang5 {
     animation-name: lang;
-    animation-duration: 4s;
-    animation-delay: 5s;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
   }
 
   #lang6 {
     animation-name: lang;
-    animation-duration: 4s;
-    animation-delay: 6s;
+    animation-duration: 3s;
+    animation-delay: 3s;
   }
 
   @keyframes lang {
-    0%  { top:0dvh; opacity: 0;}
-    25%  { top:25dvh; opacity: 50%;}
-    50%  { top:50dvh; opacity: 1;}
-    75%  { top:75dvh; opacity: 75%;}
-    100% { top:100dvh; opacity: 0;}
+    0%  { top:25dvh; opacity: 0; transform: scale(0.3);}
+    25%  { top:30dvh; opacity: 50%; transform: scale(0.5);}
+    50%  { top:50dvh; opacity: 1; transform: scale(1);}
+    75%  { top:70dvh; opacity: 75%; transform: scale(0.5);}
+    100% { top:75dvh; opacity: 0; transform: scale(0.3);}
+  }
+
+  .tech {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .date  {
+    position: absolute;
+    opacity: 50%;
   }

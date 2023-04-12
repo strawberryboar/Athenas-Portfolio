@@ -10,24 +10,22 @@ import Siteboxes from '../components/Siteboxes';
 import './Homepage.css';
 import Greeting from '../components/Greeting';
 import LinkButton from '../components/LinkButton';
-
+import DateWidget from '../hooks/DateAndTime';
 
 export default function Homepage() {
 
     const learnRef = useRef();
-    const projRef = useRef()
+    const projRef = useRef();
 
-    function handleClick() {
-        learnRef.current.scrollIntoView({ behavior: "smooth" });
+    function handleClick(scrollToRef) {
+        scrollToRef.current.scrollIntoView({ behavior: "smooth" });
       }
 
     const [isShown, setIsShown] = useState(false);
 
     return(
     <div className="Homepage">
-        <div className='date'>
-            <p>current date time</p>
-        </div>
+        <DateWidget />
         <div className='langContain'>
             <div className='lang' id='lang1'>
                 <img src={catPng} />
@@ -52,7 +50,7 @@ export default function Homepage() {
                 <h2>I'm a full-stack web developer.</h2>
                 <Link src='/'>
                     <button className='learnBtn'
-                    onClick={handleClick}>
+                    onClick={() => handleClick(learnRef)}>
                         Learn More
                     </button>
                 </Link>
@@ -98,11 +96,27 @@ export default function Homepage() {
             <div className='projBox'>
                 <LinkButton />
                 <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
+                {/* Insert dropdown here */}
+                <ul className='tech'>
+                    <li>React</li>
+                    <li>CSS</li>
+                    <li>GraphQL</li>
+                    <li>Apache</li>
+                    <li>Apollo</li>
+                </ul>
             </div>
             <div className='projBox'>
 
                 <LinkButton />
                 <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
+                {/* Insert dropdown here */}
+                <ul className='tech'>
+                    <li>HTML/CSS</li>
+                    <li>JS</li>
+                    <li>jQuery & Autocomplete</li>
+                    <li>Bulma CSS Framework</li>
+                    <li>AJAX API Requests</li>
+                </ul>
             </div>
             <div className='projBox'>
 

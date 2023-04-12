@@ -15,8 +15,7 @@
     align-items: center;
 }
 
-.btnDiv img:hover {
-    opacity: 50%;
+.btnDiv:hover {
     transition: 0.3s;
   }
 
