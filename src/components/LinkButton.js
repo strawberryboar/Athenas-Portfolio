@@ -22,14 +22,14 @@ export default function LinkButton() {
             style={{opacity: imgOpacity}}>
         </img>
             {isShown && (
-                <button className='linkBtn'
+                <div className='linkBtn'
                 onMouseEnter={() => {
                     setIsShown(true)
                     setImgOpacity(0.5)
                 }}
                 onMouseLeave={() => setIsShown(false)}>
                     <a href='https://strawberryboar.github.io/Meal-Assistant/' target="_blank">nyoom</a>
-                </button>
+                </div>
             )}
         </div>
     )

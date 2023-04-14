@@ -11,6 +11,7 @@ import './Homepage.css';
 import Greeting from '../components/Greeting';
 import LinkButton from '../components/LinkButton';
 import DateWidget from '../hooks/DateAndTime';
+import BackToTop from '../components/BackToTop';
 
 export default function Homepage() {
 
@@ -124,6 +125,7 @@ export default function Homepage() {
                 <p>peepee</p>
             </div>
             </div>
+            <BackToTop />
         </div>
     </div>
     )
