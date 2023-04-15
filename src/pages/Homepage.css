@@ -4,7 +4,6 @@
   flex-direction: column;
   font-size: calc(10px + 1vmin);
   color: white;
-  /* align-items: center; */
   margin: 0 auto;
 }
 
@@ -111,27 +110,31 @@ p {
 
   .projBox {
     width: 30%;
-    height: 30%;
     margin-bottom: 2%;
-    height: 50rem;
     padding: 2%;
   }
-
-/* move this underneath h1 */
-  .divBox hr {
-    position: absolute;
-    width: 35%;
-  }
-
-  button {
-    border: none;
-  }
-
+  
   .tech {
     text-align: left;
     font-size: 22px;
   }
-/* trying to implement this arrow */
-  .techBtn span:after {
-    content: '\21D3';
-  }
+
+  .backToTop button {
+    border: 1px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    opacity: 50%;
+    background-color: pink;
+    color: white;
+}
+
+.backToTop button:hover {
+    background-color: white;
+    color: #ff5d83;
+    scale: 1.1;
+    transition: 0.3s;
+}

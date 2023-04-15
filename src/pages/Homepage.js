@@ -7,8 +7,8 @@ import './Homepage.css';
 import Greeting from '../components/Greeting';
 import LinkButton from '../components/LinkButton';
 import DateWidget from '../hooks/DateAndTime';
-import BackToTop from '../components/BackToTop';
 import ScrollImgs from '../components/ScrollImgs';
+import Footer from '../components/Footer';
 
 export default function Homepage() {
 
@@ -43,7 +43,6 @@ export default function Homepage() {
         {/* <Siteboxes /> */}
         <div className='divBox' id='divBox1' ref={learnRef}>
         <h1>About Me</h1>
-        <hr></hr>
             <div className='linkWrap' id='aboutWrap'>
                 <div className='linkBox' id='aboutBox'>
                 <p>Currently I am the lead web developer for HaulrCorporation. My workday is balanced with React, CSS, JS, GraphQL, Apache, and more.</p>
@@ -111,15 +110,27 @@ export default function Homepage() {
             <div className='projBox'>
                 <LinkButton />
                 <p>peepee</p>
+                <div className='techBox'>
                 <button  className='techBtn' 
-                onClick={() => setIsShown(!isShown)}>press me</button>
+                onClick={() => setIsShown(!isShown)}
+                >
+                <span>press me</span>
+                </button>
                 {isShown && 
                 <p>poopoo</p>
                 }
+                </div>
             </div>
             </div>
-            <BackToTop />
+            <div className='backToTop'>
+                <button href='/'  onClick={() => {
+                    handleClick(topRef)
+                }}> 
+                <p>^</p>
+                </button>
+            </div>
         </div>
+        <Footer />
     </div>
     )
 }

@@ -2,8 +2,17 @@
     margin: 0 auto;
 }
 
-.Homepage, Footer {
-  background-color: #262d36;
+.Homepage {
+  background: linear-gradient(#FB4570, #FB6B90, #FB8DA0);
+  animation: Background 10s infinite alternate;
+}
+
+@keyframes Background {
+  0%  { top: 15dvh; background: #ff5d83;}
+  25%  { top:30dvh; background: #ff6b8d; }
+  50%  { top:50dvh; background: #ff7b9c; }
+  75%  { top:70dvh; background: #ff89a7;}
+  100% { top:75dvh; background: #fd98b0;}
 }
 
 .Contact {

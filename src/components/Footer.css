@@ -1,5 +1,4 @@
 Footer {
-    color:white;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -22,7 +21,7 @@ Footer {
     align-items: center;
 }
 
-.footerBox img {
+.footerBox svg {
     width: 100px;
     height: 100px;
 }
@@ -31,7 +30,7 @@ Footer {
     margin-left: 5%;
   }
 
-.footerBox img:hover {
+.footerBox svg:hover {
     transition: 0.3s;
     scale: 1.2;
 }
@@ -42,7 +41,7 @@ Footer p {
 }
 
 @media (max-width: 800px){
-    .footerBox img {
+    .footerBox svg {
         width: 100%;
     }
 }
