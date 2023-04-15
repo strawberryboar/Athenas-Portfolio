@@ -46,15 +46,15 @@ p {
   width: 200px;
   height: 75px;
   color: white;
-  border: 3px solid white;
-  border-radius: 3px;
+  border: 3px;
+  border-radius: 12px;
   font-size: 20px;
   background-color: pink;
 }
 
 .learnBtn:hover, .projBtn:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #ff5d83;
   transition: 0.3s;
   scale: 1.2;
 }
