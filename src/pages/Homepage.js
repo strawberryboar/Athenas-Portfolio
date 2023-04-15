@@ -1,9 +1,5 @@
 import React, { useRef, useState } from 'react';
 import catPng from '../assets/cat.png';
-import catPng2 from '../assets/cat2.png';
-import catPng3 from '../assets/cat3.png';
-import catPng4 from '../assets/cat4.png';
-import dogPng5 from '../assets/dog5.png';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
 import Siteboxes from '../components/Siteboxes';
@@ -12,11 +8,13 @@ import Greeting from '../components/Greeting';
 import LinkButton from '../components/LinkButton';
 import DateWidget from '../hooks/DateAndTime';
 import BackToTop from '../components/BackToTop';
+import ScrollImgs from '../components/ScrollImgs';
 
 export default function Homepage() {
 
     const learnRef = useRef();
     const projRef = useRef();
+    const topRef = useRef();
 
     function handleClick(scrollToRef) {
         scrollToRef.current.scrollIntoView({ behavior: "smooth" });
@@ -25,25 +23,9 @@ export default function Homepage() {
     const [isShown, setIsShown] = useState(false);
 
     return(
-    <div className="Homepage">
+    <div className="Homepage" ref={topRef}>
         <DateWidget />
-        <div className='langContain'>
-            <div className='lang' id='lang1'>
-                <img src={catPng} />
-            </div>
-            <div className='lang' id='lang2'>
-                <img src={catPng2} />
-            </div>
-            <div className='lang' id='lang3'>
-                <img src={catPng3} />
-            </div>
-            <div className='lang' id='lang4'>
-                <img src={catPng4} />
-            </div>
-            <div className='lang' id='lang5'>
-                <img src={dogPng5} />
-            </div>
-        </div>
+        {/* <ScrollImgs /> */}
         <div className='headerWrap'>
             <header className='header'>
                 <img src={catPng} />
@@ -77,7 +59,6 @@ export default function Homepage() {
                     </p>
                 </div>
             </div>
-                {/* Doesn't link at the moment */}
             <Link src='/'>
                 <button className='projBtn' onClick={() => {
                     handleClick(projRef)
@@ -97,32 +78,44 @@ export default function Homepage() {
             <div className='projBox'>
                 <LinkButton />
                 <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
-                {/* Insert dropdown here */}
+                <button  className='techBtn' 
+                onClick={() => setIsShown(!isShown)}>press me</button>
+                {isShown && 
                 <ul className='tech'>
-                    <li>React</li>
-                    <li>CSS</li>
-                    <li>GraphQL</li>
-                    <li>Apache</li>
-                    <li>Apollo</li>
-                </ul>
+                <li>React</li>
+                <li>CSS</li>
+                <li>GraphQL</li>
+                <li>Apache</li>
+                <li>Apollo</li>
+            </ul>
+                }
+                
             </div>
             <div className='projBox'>
-
                 <LinkButton />
                 <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
                 {/* Insert dropdown here */}
-                <ul className='tech'>
+                {/* display none until button is clicked? */}
+                <button  className='techBtn'
+                onClick={() => setIsShown(!isShown)}>press me</button>
+                {isShown && 
+                    <ul className='tech'>
                     <li>HTML/CSS</li>
                     <li>JS</li>
                     <li>jQuery & Autocomplete</li>
                     <li>Bulma CSS Framework</li>
                     <li>AJAX API Requests</li>
                 </ul>
+                }
             </div>
             <div className='projBox'>
-
                 <LinkButton />
                 <p>peepee</p>
+                <button  className='techBtn' 
+                onClick={() => setIsShown(!isShown)}>press me</button>
+                {isShown && 
+                <p>poopoo</p>
+                }
             </div>
             </div>
             <BackToTop />

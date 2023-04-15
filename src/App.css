@@ -25,7 +25,7 @@
     color: pink;
   }
 
-  @media (max-width: 800px){
+@media (max-width: 800px){
     .footerBox img {
         width: 100%;
     }
@@ -38,18 +38,21 @@
       padding: 2%;
     }
     
-    .projBox {
-      overflow: scroll;
+    /* .projBox {
       max-height: 70dvh;
-    }
+    } */
 
     .titles {
       margin: 0 10%;
     }
-}
-
-@media (max-width: 600px) {
-  .projBox {
-    max-height: 50dvh;
+    .siteWrap {
+      display: flex;
+      flex-direction:column;
+      width: 100%;
   }
+  .siteBox:nth-child(n+2) {
+      margin-top: 3px;
+      margin-left: 0;
+    }
+    
 }

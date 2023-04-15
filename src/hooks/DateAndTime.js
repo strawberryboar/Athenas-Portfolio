@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import './DateAndTime.css';
 
 export default function DateWidget() {
     const [dateState, setDateState] = useState(new Date());

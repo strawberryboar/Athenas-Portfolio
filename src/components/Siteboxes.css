@@ -20,16 +20,3 @@
   .siteBox img {
     min-width: 100px;
   }
-
-  
-  @media (max-width: 800px) {
-    .siteWrap {
-        display: flex;
-        flex-direction:column;
-        width: 100%;
-    }
-    .siteBox:nth-child(n+2) {
-        margin-top: 3px;
-        margin-left: 0;
-      }
-  }

@@ -1,8 +1,12 @@
 .date {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: left;
-    justify-content: left;
     opacity: 50%;
-    position: absolute;
+    position: fixed;
+  }
+
+  .date p {
+    margin: 0;
+    text-shadow: 2px 2px 5px black;
   }
