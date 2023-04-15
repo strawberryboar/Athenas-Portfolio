@@ -138,3 +138,21 @@ p {
     scale: 1.1;
     transition: 0.3s;
 }
+
+.techBtn {
+  width: 100%;
+  height: 50px;
+  color: white;
+  border: 3px;
+  border-radius: 12px;
+  font-size: 20px;
+  background-color: pink;
+  -webkit-mask-image: linear-gradient(black, black, transparent);
+  mask-image: linear-gradient(black, black, transparent);
+}
+
+
+.techBtn:hover {
+  background-color: #ff5d83;
+  mask: transparent;
+}

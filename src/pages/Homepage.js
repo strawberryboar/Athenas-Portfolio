@@ -67,7 +67,7 @@ export default function Homepage() {
             </Link>
         </div>
         <div className='projects' ref={projRef}>
-            <h1>My Work|</h1>
+            <h1>My Work</h1>
             <div className='titles'>
             <h2>HAUL'R</h2>
             <h2>Meal Assistant</h2>
