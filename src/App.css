@@ -4,7 +4,7 @@
 
 .Homepage {
   background: linear-gradient(#FB4570, #FB6B90, #FB8DA0);
-  animation: Background 10s infinite alternate;
+  animation: Background 5s infinite alternate;
 }
 
 @keyframes Background {

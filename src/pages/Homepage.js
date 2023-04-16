@@ -9,6 +9,10 @@ import LinkButton from '../components/LinkButton';
 import DateWidget from '../hooks/DateAndTime';
 import ScrollImgs from '../components/ScrollImgs';
 import Footer from '../components/Footer';
+import { ReactComponent as Arrow } from '../assets/Arrow.svg';
+import { ReactComponent as UpArrow } from '../assets/UpArrow.svg';
+import { ReactComponent as DownArrow } from '../assets/DownArrow.svg';
+import { ReactComponent as UpArrowCirc } from '../assets/UpArrowCirc.svg';
 
 export default function Homepage() {
 
@@ -32,10 +36,10 @@ export default function Homepage() {
                 <Greeting />
                 <h2>I'm a full-stack web developer.</h2>
                 <Link src='/'>
-                    <button className='learnBtn'
+                    <a className='downArrow'
                     onClick={() => handleClick(learnRef)}>
-                        Learn More
-                    </button>
+                        <DownArrow />
+                    </a>
                 </Link>
             </header>
         </div>
@@ -53,17 +57,16 @@ export default function Homepage() {
                     </p>
                 </div>
                 <div className='linkBox' id='aboutBox'>
-                    <p>I am open to new opportunities and collaborations! 
-                        <Link to='/'>Please message me here.</Link>
+                    <p>I am always open to new opportunities and collaborations! 
                     </p>
                 </div>
             </div>
             <Link src='/'>
-                <button className='projBtn' onClick={() => {
+                <a className='downArrow' onClick={() => {
                     handleClick(projRef)
                 }}>
-                    V
-                </button>
+                <DownArrow />
+                </a>
             </Link>
         </div>
         <div className='projects' ref={projRef}>
@@ -77,8 +80,8 @@ export default function Homepage() {
             <div className='projBox'>
                 <LinkButton />
                 <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
-                <button  className='techBtn' 
-                onClick={() => setIsShown(!isShown)}>press me</button>
+                <a className='techBtn' 
+                onClick={() => setIsShown(!isShown)}><DownArrow/></a>
                 {isShown && 
                 <ul className='tech'>
                 <li>React</li>
@@ -95,8 +98,8 @@ export default function Homepage() {
                 <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
                 {/* Insert dropdown here */}
                 {/* display none until button is clicked? */}
-                <button  className='techBtn'
-                onClick={() => setIsShown(!isShown)}>press me</button>
+                <a className='techBtn' 
+                onClick={() => setIsShown(!isShown)}><DownArrow/></a>
                 {isShown && 
                     <ul className='tech'>
                     <li>HTML/CSS</li>
@@ -111,11 +114,8 @@ export default function Homepage() {
                 <LinkButton />
                 <p>peepee</p>
                 <div className='techBox'>
-                <button  className='techBtn' 
-                onClick={() => setIsShown(!isShown)}
-                >
-                <span>press me</span>
-                </button>
+                <a className='techBtn' 
+                onClick={() => setIsShown(!isShown)}><DownArrow/></a>
                 {isShown && 
                 <p>poopoo</p>
                 }
@@ -123,11 +123,11 @@ export default function Homepage() {
             </div>
             </div>
             <div className='backToTop'>
-                <button href='/'  onClick={() => {
+                <Link href='/'  onClick={() => {
                     handleClick(topRef)
                 }}> 
-                <p>^</p>
-                </button>
+                <UpArrowCirc />
+                </Link>
             </div>
         </div>
         <Footer />

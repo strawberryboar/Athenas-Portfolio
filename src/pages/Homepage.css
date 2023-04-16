@@ -42,7 +42,7 @@ p {
   align-items: center;
 }
 
-.learnBtn, .projBtn  {
+.learnBtn {
   width: 200px;
   height: 75px;
   color: white;
@@ -52,7 +52,13 @@ p {
   background-color: pink;
 }
 
-.learnBtn:hover, .projBtn:hover {
+.downArrow svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.learnBtn:hover {
   background-color: white;
   color: #ff5d83;
   transition: 0.3s;
@@ -69,6 +75,7 @@ p {
   #divBox1 {
     height: 100dvh;
     text-align: center;
+    position: relative;
   }
 
   .linkBox {
@@ -119,11 +126,11 @@ p {
     font-size: 22px;
   }
 
-  .backToTop button {
+  .backToTop svg {
     border: 1px;
     border-radius: 50%;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     right: 2%;
     bottom: 2%;
@@ -132,7 +139,7 @@ p {
     color: white;
 }
 
-.backToTop button:hover {
+.backToTop svg:hover {
     background-color: white;
     color: #ff5d83;
     scale: 1.1;
@@ -146,13 +153,10 @@ p {
   border: 3px;
   border-radius: 12px;
   font-size: 20px;
-  background-color: pink;
-  -webkit-mask-image: linear-gradient(black, black, transparent);
-  mask-image: linear-gradient(black, black, transparent);
 }
 
 
-.techBtn:hover {
-  background-color: #ff5d83;
-  mask: transparent;
+.techBtn:hover, .downArrow svg:hover {
+  scale: 1.2;
+  transition: 0.3s;
 }
