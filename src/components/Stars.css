@@ -1,0 +1,42 @@
+.Stars {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    position: fixed;
+}
+
+.Star1 {
+    animation: Star1 2s infinite linear alternate;
+    position: fixed;
+    scale: 0.2;
+}
+
+#one {
+    inset: 10dvh 20dvh 30dvh 40dvh;
+}
+
+#two {
+    inset: 50dvh 20dvh 10dvh 10dvh;
+}
+
+#three {
+    inset: 10dvh 10dvh 10dvh 10dvh;
+}
+
+#four {
+    animation: Star1 2s infinite linear alternate;
+    position: fixed;
+    inset: 10dvh 600dvh 20dvh 20dvh;
+    scale: 0.2;
+}
+#five {
+    inset: 1dvh 1dvh 50dvh 99dvh;
+}
+#six {
+    inset: 80dvh 99dvh 5dvh 2dvh;
+}
+
+@keyframes Star1 {
+    0% { opacity: 0;}
+    100% { opacity: 100%; }
+}

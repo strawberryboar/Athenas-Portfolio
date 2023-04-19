@@ -1,0 +1,127 @@
+.Clouds {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    position: fixed;
+    z-index: 1;
+}
+
+.solidClouds {
+    animation: cloudAnimate 100s infinite linear alternate;
+    position: fixed;
+    top: 5dvh;
+    opacity: 60%;
+  }
+
+  .transClouds {
+    animation: cloudAnimate 40s infinite linear alternate;
+    position: fixed;
+    top: 15dvh;
+    opacity: 30%;
+  }
+
+  .smallClouds {
+    animation: cloudAnimate 50s infinite linear alternate;
+    position: fixed;
+    top: 10dvh;
+    opacity: 20%;
+    scale: 0.5;
+  }
+  
+  @keyframes cloudAnimate {
+    0% { left: 0;}
+    25% { left: 25%;}
+    50% { left: 50%;}
+    75% { left: 75%;}
+    100% { left: 100%; }
+  }
+
+  .solidClouds2 {
+    animation: cloudAnimate2 110s infinite linear alternate-reverse;
+    position: fixed;
+    top: 25dvh;
+    opacity: 60%;
+  }
+
+  .transClouds2 {
+    animation: cloudAnimate2 30s infinite linear alternate-reverse;
+    position: fixed;
+    top: 65dvh;
+    opacity: 30%;
+  }
+
+  .smallClouds2 {
+    animation: cloudAnimate2 50s infinite linear alternate-reverse;
+    position: fixed;
+    top: 90dvh;
+    opacity: 25%;
+    scale: 0.5;
+  }
+
+  @keyframes cloudAnimate2 {
+    0% { left: 0%;}
+    25% { left: 25%;}
+    50% { left: 50%;}
+    75% { left: 75%;}
+    100% { left: 100%; }
+  }
+
+  .solidClouds3 {
+    animation: cloudAnimate3 150s infinite linear alternate;
+    position: fixed;
+    top: 60dvh;
+    opacity: 60%;
+  }
+
+  .transClouds3 {
+    animation: cloudAnimate3 60s infinite linear alternate-reverse;
+    position: fixed;
+    top: 10dvh;
+    opacity: 30%;
+  }
+
+  .smallClouds3 {
+    animation: cloudAnimate3 120s infinite linear alternate;
+    position: fixed;
+    top: 85dvh;
+    opacity: 50%;
+    scale: 0.5;
+  }
+
+  @keyframes cloudAnimate3 {
+    0% { left: 0%;}
+    25% { left: 25%;}
+    50% { left: 50%;}
+    75% { left: 75%;}
+    100% { left: 100%; }
+  }
+
+  .solidClouds4 {
+    animation: cloudAnimate4 150s infinite linear alternate-reverse;
+    position: fixed;
+    top: 50dvh;
+    opacity: 60%;
+  }
+
+  .transClouds4 {
+    animation: cloudAnimate4 80s infinite linear alternate;
+    position: fixed;
+    top: 80dvh;
+    opacity: 30%;
+  }
+
+  .smallClouds4 {
+    animation: cloudAnimate4 120s infinite linear alternate-reverse;
+    position: fixed;
+    top: 70dvh;
+    opacity: 40%;
+    scale: 0.5;
+  }
+
+  @keyframes cloudAnimate4 {
+    0% { left: 0%;}
+    25% { left: 25%;}
+    50% { left: 50%;}
+    75% { left: 75%;}
+    100% { left: 100%; }
+  }

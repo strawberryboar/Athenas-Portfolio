@@ -13,6 +13,9 @@ import { ReactComponent as Arrow } from '../assets/Arrow.svg';
 import { ReactComponent as UpArrow } from '../assets/UpArrow.svg';
 import { ReactComponent as DownArrow } from '../assets/DownArrow.svg';
 import { ReactComponent as UpArrowCirc } from '../assets/UpArrowCirc.svg';
+import CloudAnimation from '../components/Clouds';
+import Stars from '../components/Stars.js';
+
 
 export default function Homepage() {
 
@@ -28,6 +31,8 @@ export default function Homepage() {
 
     return(
     <div className="Homepage" ref={topRef}>
+        <CloudAnimation />
+        <Stars/>
         <DateWidget />
         {/* <ScrollImgs /> */}
         <div className='headerWrap'>
