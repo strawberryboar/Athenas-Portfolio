@@ -15,6 +15,7 @@ import { ReactComponent as DownArrow } from '../assets/DownArrow.svg';
 import { ReactComponent as UpArrowCirc } from '../assets/UpArrowCirc.svg';
 import CloudAnimation from '../components/Clouds';
 import Stars from '../components/Stars.js';
+import 'animate.css';
 
 
 export default function Homepage() {
@@ -37,11 +38,11 @@ export default function Homepage() {
         {/* <ScrollImgs /> */}
         <div className='headerWrap'>
             <header className='header'>
-                <img src={catPng} />
+                <img src={catPng} className='animate__animated animate__fadeInDown' />
                 <Greeting />
-                <h2>I'm a full-stack web developer.</h2>
-                <Link src='/'>
-                    <a className='downArrow'
+                <h2 className='animate__animated animate__fadeInDown'>I'm a full-stack web developer.</h2>
+                <Link className='animate__animated animate__slideInDown' src='/'>
+                    <a className='downArrow' 
                     onClick={() => handleClick(learnRef)}>
                         <DownArrow />
                     </a>

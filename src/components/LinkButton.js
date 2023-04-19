@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CSSTransition } from 'react-transition-group';
 import './LinkButton.css';
 import catPng from '../assets/cat.png';
 
@@ -14,6 +15,7 @@ export default function LinkButton() {
             onMouseEnter={() => {
                 setImgOpacity(0.5)
                 setIsShown(true)
+                
             }}
             onMouseLeave={() => {
                 setImgOpacity(1)

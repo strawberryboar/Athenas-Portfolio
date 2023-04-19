@@ -13,7 +13,7 @@ const Greeting = () => {
     else if (hours >= 17 && hours <= 24)
        greet = "evening";
     
-    return <span id='greet'>Good {greet}, I'm Pee-Pee.</span>
+    return <span className='animate__animated animate__fadeInDown' id='greet'>Good {greet}, I'm Pee-Pee.</span>
 }
 
 export default Greeting

@@ -8,35 +8,134 @@
 .Star1 {
     animation: Star1 2s infinite linear alternate;
     position: fixed;
-    scale: 0.2;
+    scale: 0.5;
 }
 
 #one {
-    inset: 10dvh 20dvh 30dvh 40dvh;
+    left: 4dvh;
+    top: 8dvh;
+    animation-delay: 1s;
 }
 
 #two {
-    inset: 50dvh 20dvh 10dvh 10dvh;
+    left: 5dvh;
+    top: 10dvh;
 }
 
 #three {
-    inset: 10dvh 10dvh 10dvh 10dvh;
+    left: 15dvh;
+    bottom: 10dvh;
 }
 
 #four {
-    animation: Star1 2s infinite linear alternate;
-    position: fixed;
-    inset: 10dvh 600dvh 20dvh 20dvh;
-    scale: 0.2;
+   left: 5dvh;
+   bottom: 20px;
+   animation-delay: 1s;
 }
+
 #five {
-    inset: 1dvh 1dvh 50dvh 99dvh;
+    right: 80px;
+    bottom: 60dvh;
 }
+
 #six {
-    inset: 80dvh 99dvh 5dvh 2dvh;
+    right: 50px;
+    bottom: 55dvh;
+    animation-delay: 1s;
+}
+
+#seven {
+    left: 50px;
+    bottom: 45dvh;
+    animation-delay: 1s;
+}
+
+#eight {
+    left: 10px;
+    bottom: 40dvh;
+}
+
+#nine {
+    left: 20dvh;
+    animation-delay: 1s;
+    
+}
+
+#ten {
+    right: 50px;
+    top: 50px;
+}
+
+#eleven {
+    right: 20px;
+    animation-delay: 1s;
 }
 
 @keyframes Star1 {
     0% { opacity: 0;}
+    100% { opacity: 100%; filter: drop-shadow(1px 1px 10px white); }
+}
+
+.Star2 {
+    animation: Star2 1s infinite linear alternate;
+    position: fixed;
+    scale: 0.2;
+}
+
+#one2 {
+    left: 15dvh;
+}
+
+#two2 {
+    bottom: 1px;
+    left: 1px;
+}
+
+#three2 {
+    left: 10dvh;
+    top: 50dvh;
+}
+
+#four2 {
+    right: 5px;
+    bottom: 30dvh;
+}
+
+#five2 {
+    right: 20px;
+    bottom: 20dvh;
+}
+
+#six2 {
+    right: 1px;
+}
+
+#seven2 {
+    left: 1px;
+    top: 8dvh;
+}
+
+#eight2 {
+    left: 15dvh;
+    bottom: 0;
+}
+
+#nine2 {
+    right: 30px;
+    bottom: 65dvh;
+}
+
+#ten2 {
+    bottom: 0;
+    right: 0;
+}
+
+#eleven2 {
+    top:  30dvh;
+    left: 0;
+}
+
+@keyframes Star2 {
+    0% { opacity: 50%;}
     100% { opacity: 100%; }
 }
