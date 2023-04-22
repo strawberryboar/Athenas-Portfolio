@@ -1,16 +1,12 @@
 import React, { useRef, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import catPng from '../assets/cat.png';
-import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
-import Siteboxes from '../components/Siteboxes';
 import './Homepage.css';
 import Greeting from '../components/Greeting';
 import LinkButton from '../components/LinkButton';
 import DateWidget from '../hooks/DateAndTime';
-import ScrollImgs from '../components/ScrollImgs';
 import Footer from '../components/Footer';
-import { ReactComponent as Arrow } from '../assets/Arrow.svg';
-import { ReactComponent as UpArrow } from '../assets/UpArrow.svg';
 import { ReactComponent as DownArrow } from '../assets/DownArrow.svg';
 import { ReactComponent as UpArrowCirc } from '../assets/UpArrowCirc.svg';
 import CloudAnimation from '../components/Clouds';
@@ -19,11 +15,16 @@ import 'animate.css';
 
 
 export default function Homepage() {
-
+    // const {ref: learnRef, inView: aboutIsVisible} = useInView();
     const learnRef = useRef();
-    const projRef = useRef();
-    const topRef = useRef();
 
+    const projRef = useRef();
+    // const {ref: projRef, inView: projectIsVisible} = useInView();
+    
+    const topRef = useRef();
+    // const {ref: topRef, inView: topIsVisible} = useInView();
+
+    // className={`${projectIsVisible ? 'projects animate__animated animate__fadeInDown' : ''}`} 
     function handleClick(scrollToRef) {
         scrollToRef.current.scrollIntoView({ behavior: "smooth" });
       }
@@ -31,12 +32,13 @@ export default function Homepage() {
     const [isShown, setIsShown] = useState(false);
 
     return(
-    <div className="Homepage" ref={topRef}>
+    <div className="Homepage">
         <CloudAnimation />
         <Stars/>
         <DateWidget />
         {/* <ScrollImgs /> */}
-        <div className='headerWrap'>
+        {/* this scrollinto view is causing a bug */}
+        <div className='headerWrap' ref={topRef}>
             <header className='header'>
                 <img src={catPng} className='animate__animated animate__fadeInDown' />
                 <Greeting />
@@ -49,9 +51,8 @@ export default function Homepage() {
                 </Link>
             </header>
         </div>
-        {/* <Navbar /> */}
-        {/* <Siteboxes /> */}
         <div className='divBox' id='divBox1' ref={learnRef}>
+            {/* if this div is visible, call the animation. if not, nothing */}
         <h1>About Me</h1>
             <div className='linkWrap' id='aboutWrap'>
                 <div className='linkBox' id='aboutBox'>
@@ -128,14 +129,14 @@ export default function Homepage() {
                 </div>
             </div>
             </div>
-            <div className='backToTop'>
+        </div>
+        <div className='backToTop'>
                 <Link href='/'  onClick={() => {
                     handleClick(topRef)
                 }}> 
                 <UpArrowCirc />
                 </Link>
             </div>
-        </div>
         <Footer />
     </div>
     )
