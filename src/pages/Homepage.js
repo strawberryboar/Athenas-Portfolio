@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 import catPng from '../assets/cat.png';
 import { Link } from 'react-router-dom';
 import './Homepage.css';
@@ -86,7 +86,7 @@ export default function Homepage() {
             <div className='projBoxContain'>
             <div className='projBox'>
                 <LinkButton />
-                <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
+                <p>HAUL'R is a MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
                 <a className='techBtn' 
                 onClick={() => setIsShown(!isShown)}><DownArrow/></a>
                 {isShown && 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './LinkButton.css';
 import catPng from '../assets/cat.png';
-
+import HaulrGif from '../assets/HAULR-2.0.gif';
 
 export default function LinkButton() {
 
@@ -10,7 +10,7 @@ export default function LinkButton() {
 
     return(
         <div className='btnDiv'>
-        <img src={catPng}
+        <img src={HaulrGif}
             onMouseEnter={() => {
                 setImgOpacity(0.5)
                 setIsShown(true)
