@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-// import { useInView } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer';
 import catPng from '../assets/cat.png';
 import { Link } from 'react-router-dom';
 import './Homepage.css';
@@ -84,9 +84,9 @@ export default function Homepage() {
             <h2>website</h2>
             </div>
             <div className='projBoxContain'>
-            <div className='projBox'>
+            {/* <div className='projBox'>
                 <LinkButton />
-                <p>HAUL'R is a MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
+                <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
                 <a className='techBtn' 
                 onClick={() => setIsShown(!isShown)}><DownArrow/></a>
                 {isShown && 
@@ -99,12 +99,11 @@ export default function Homepage() {
             </ul>
                 }
                 
-            </div>
-            <div className='projBox'>
+            </div> */}
+            {/* <div className='projBox'>
                 <LinkButton />
                 <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
-                {/* Insert dropdown here */}
-                {/* display none until button is clicked? */}
+           
                 <a className='techBtn' 
                 onClick={() => setIsShown(!isShown)}><DownArrow/></a>
                 {isShown && 
@@ -116,8 +115,8 @@ export default function Homepage() {
                     <li>AJAX API Requests</li>
                 </ul>
                 }
-            </div>
-            <div className='projBox'>
+            </div> */}
+            {/* <div className='projBox'>
                 <LinkButton />
                 <p>peepee</p>
                 <div className='techBox'>
@@ -127,8 +126,14 @@ export default function Homepage() {
                 <p>poopoo</p>
                 }
                 </div>
+            </div> */}
             </div>
-            </div>
+        </div>
+        <div className='projBox'>
+            <img src={catPng}/>
+            <h1>PeePee</h1>
+            <LinkButton/>
+            
         </div>
         <div className='backToTop'>
                 <Link href='/'  onClick={() => {
