@@ -136,11 +136,15 @@ export default function Homepage() {
                 </Collapse>
             </div>
             <div className='projBox'>
+            <a href='#'>link</a>
+                <div className='imgDiv'>
+                    <img src={catPng}/>
+                </div>
                 <p>peepee</p>
                 <div className='techBox'>
-                <Collapse>
-                <p>poopoo</p>
-                </Collapse>
+                    <Collapse>
+                        <p>poopoo</p>
+                    </Collapse>
                 </div>
             </div>
             </div>

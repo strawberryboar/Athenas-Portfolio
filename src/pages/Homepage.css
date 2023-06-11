@@ -11,6 +11,10 @@
   z-index: 1000;
 }
 
+li {
+  list-style-image: url('../assets/pixelheart.png');
+}
+
 p {
   font-size: 25px;
 }
@@ -147,12 +151,12 @@ p, h1, h2, span {
     opacity: 90%;
   }
 
-  .projBox img:hover {
+  .imgDiv:hover {
     transition: 0.3s;
     filter: blur(3px);
   }
 
-  .imgDiv a {
+  .projBox a {
     position: absolute;
     z-index: 999999;
   }

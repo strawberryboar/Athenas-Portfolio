@@ -18,9 +18,12 @@ export default function Collapse(props) {
             onClick={() => setIsShown(!isShown)}>
                 <DownArrow style={style}/>
         </a>
+        {/* need to animate on click */}
         <div>
-        {isShown && 
-            props.children
+        {isShown && (
+             props.children
+        )
+           
         }
         </div>
         </div>
