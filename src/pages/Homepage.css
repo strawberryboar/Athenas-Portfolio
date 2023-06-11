@@ -69,6 +69,10 @@ p, h1, h2, span {
   color: white;
 }
 
+.downArrow svg:hover {
+  cursor: pointer;
+}
+
 .learnBtn:hover {
   background-color: white;
   color: #ff5d83;
@@ -127,18 +131,40 @@ p, h1, h2, span {
     flex-direction: row;
     margin-top: 2%;
     height: 20%;
+    
   }
 
   .projBox {
     width: 30%;
     margin-bottom: 2%;
     padding: 2%;
+    z-index: 1;
+  }
+
+  .projBox img {
+    max-width: 80%;
+    opacity: 90%;
+  }
+
+  .projBox img:hover {
+    transition: 0.3s;
+    filter: blur(3px);
   }
   
   .tech {
     text-align: left;
     font-size: 22px;
   }
+
+  .linkBtn {
+    position: absolute;
+
+    width: 100px;
+    height: 75px;
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+}
 
   .backToTop svg {
     border: 1px;

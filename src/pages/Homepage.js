@@ -12,6 +12,9 @@ import { ReactComponent as UpArrowCirc } from '../assets/UpArrowCirc.svg';
 import CloudAnimation from '../components/Clouds';
 import Stars from '../components/Stars.js';
 import 'animate.css';
+import Collapse from '../components/Collapse';
+import haulrscreen from '../assets/haulrscreen.png'
+import MealAssistant from '../assets/MealAssistant.png';
 
 
 export default function Homepage() {
@@ -84,57 +87,53 @@ export default function Homepage() {
             <h2>website</h2>
             </div>
             <div className='projBoxContain'>
-            {/* <div className='projBox'>
-                <LinkButton />
+            <div className='projBox'>
+                <img src={haulrscreen}/>
                 <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
-                <a className='techBtn' 
-                onClick={() => setIsShown(!isShown)}><DownArrow/></a>
-                {isShown && 
+               <Collapse>
                 <ul className='tech'>
-                <li>React</li>
-                <li>CSS</li>
-                <li>GraphQL</li>
-                <li>Apache</li>
-                <li>Apollo</li>
-            </ul>
-                }
-                
-            </div> */}
-            {/* <div className='projBox'>
-                <LinkButton />
-                <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
-           
-                <a className='techBtn' 
-                onClick={() => setIsShown(!isShown)}><DownArrow/></a>
-                {isShown && 
-                    <ul className='tech'>
-                    <li>HTML/CSS</li>
-                    <li>JS</li>
-                    <li>jQuery & Autocomplete</li>
-                    <li>Bulma CSS Framework</li>
-                    <li>AJAX API Requests</li>
+                    <li>MongoDB</li>
+                    <li>Express</li>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>GraphQL</li>
                 </ul>
-                }
-            </div> */}
-            {/* <div className='projBox'>
-                <LinkButton />
+            </Collapse>    
+            </div>
+            <div className='projBox'>
+                <img src={MealAssistant}/>
+                <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
+                <Collapse>
+                    <ul className='tech'>
+                        <li>HTML/CSS</li>
+                        <li>JS</li>
+                        <li>jQuery & Autocomplete</li>
+                        <li>Bulma CSS Framework</li>
+                        <li>AJAX API Requests</li>
+                    </ul>
+                </Collapse>
+            </div>
+            <div className='projBox'>
                 <p>peepee</p>
                 <div className='techBox'>
-                <a className='techBtn' 
-                onClick={() => setIsShown(!isShown)}><DownArrow/></a>
-                {isShown && 
+                <Collapse>
                 <p>poopoo</p>
-                }
+                </Collapse>
                 </div>
-            </div> */}
+            </div>
             </div>
         </div>
-        <div className='projBox'>
+        {/* <div className='projBox'>
             <img src={catPng}/>
             <h1>PeePee</h1>
-            <LinkButton/>
+            <Collapse>
+                <ul>
+                    <li>pee</li>
+                    <li>pee</li>
+                </ul>
+            </Collapse>
             
-        </div>
+        </div> */}
         <div className='backToTop'>
                 <Link href='/'  onClick={() => {
                     handleClick(topRef)

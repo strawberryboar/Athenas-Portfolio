@@ -33,6 +33,7 @@
 
   a:hover {
     color: pink;
+    cursor: pointer;
   }
 
 @media (max-width: 800px){
