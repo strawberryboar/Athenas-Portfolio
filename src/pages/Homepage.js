@@ -13,7 +13,7 @@ import CloudAnimation from '../components/Clouds';
 import Stars from '../components/Stars.js';
 import 'animate.css';
 import Collapse from '../components/Collapse';
-import haulrscreen from '../assets/haulrscreen.png'
+import HaulrScreen from '../assets/HaulrScreen.png'
 import MealAssistant from '../assets/MealAssistant.png';
 
 
@@ -33,6 +33,22 @@ export default function Homepage() {
       }
 
     const [isShown, setIsShown] = useState(false);
+    const [isHover, setIsHover] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHover(true);
+    }
+
+    const handleMouseOut = () => {
+        setIsHover(false);
+    }
+
+// case isHover(true) ? ____ : isHover(false)
+
+    // const handleMouseOut = () => {
+    //     setIsHover(false);
+    // }
+
 
     return(
     <div className="Homepage">
@@ -88,7 +104,10 @@ export default function Homepage() {
             </div>
             <div className='projBoxContain'>
             <div className='projBox'>
-                <img src={haulrscreen}/>
+                <div className='imgDiv'>
+                <a href='https://haulrcorp.com/'>HaulrCorp.com</a>
+                <img src={HaulrScreen}/>
+                </div>
                 <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
                <Collapse>
                 <ul className='tech'>
@@ -101,7 +120,10 @@ export default function Homepage() {
             </Collapse>    
             </div>
             <div className='projBox'>
-                <img src={MealAssistant}/>
+                <div className='imgDiv'>
+                    <a href='https://strawberryboar.github.io/Meal-Assistant/'>Meal Assistant</a>
+                    <img src={MealAssistant}/>
+                 </div>
                 <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
                 <Collapse>
                     <ul className='tech'>

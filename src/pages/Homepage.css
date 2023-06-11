@@ -143,12 +143,18 @@ p, h1, h2, span {
 
   .projBox img {
     max-width: 80%;
+    max-height: 50%;
     opacity: 90%;
   }
 
   .projBox img:hover {
     transition: 0.3s;
     filter: blur(3px);
+  }
+
+  .imgDiv a {
+    position: absolute;
+    z-index: 999999;
   }
   
   .tech {

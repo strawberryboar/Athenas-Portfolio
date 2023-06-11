@@ -7,17 +7,16 @@ import { ReactComponent as UpArrow } from '../assets/UpArrow.svg';
 export default function Collapse(props) {
 
     const [isShown, setIsShown] = useState(false);
-    const styles = {
-        transform: {
-            transition: '0.3s'
-        }
+    const style = {
+        transform: isShown ? 'rotate(180deg)' : '',
+        transition: 'transform 175ms ease'
     }
 
     return(
         <div>
         <a
             onClick={() => setIsShown(!isShown)}>
-               {isShown === true ? <UpArrow/> : <DownArrow/>}
+                <DownArrow style={style}/>
         </a>
         <div>
         {isShown && 
