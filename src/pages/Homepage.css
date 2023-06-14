@@ -101,15 +101,19 @@ p, h1, h2, span {
   .linkBox {
     display: flex;
     flex-direction: column;
-    width: 75%;
     align-items: center;
+    width: 75%;
+    padding: 1%;
+  }
+
+  .linkBox img {
+    max-width: 60%;
   }
 
 #aboutWrap {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
  justify-content: center;
- align-items: center;
  z-index: 1000;
 }
 
@@ -133,21 +137,19 @@ p, h1, h2, span {
     z-index: 1000;
     display: flex;
     flex-direction: row;
-    margin-top: 2%;
-    height: 20%;
-    
+    height: 100dvh;
+    overflow-y: auto;
   }
 
   .projBox {
     width: 30%;
     margin-bottom: 2%;
     padding: 2%;
-    z-index: 1;
+    overflow-y: auto;
   }
 
   .projBox img {
-    max-width: 80%;
-    max-height: 50%;
+    max-width: 60%;
     opacity: 90%;
   }
 
@@ -156,14 +158,15 @@ p, h1, h2, span {
     filter: blur(3px);
   }
 
-  .projBox a {
+  .imgDiv a {
     position: absolute;
     z-index: 999999;
   }
   
-  .tech {
-    text-align: left;
+  .techBox {
     font-size: 22px;
+    overflow-y: auto;
+    padding-top: 2%;
   }
 
   .linkBtn {

@@ -75,16 +75,19 @@ export default function Homepage() {
         <h1>About Me</h1>
             <div className='linkWrap' id='aboutWrap'>
                 <div className='linkBox' id='aboutBox'>
-                <p>Currently I am the lead web developer for HaulrCorporation. My workday is balanced with React, CSS, JS, GraphQL, Apache, and more.</p>
+                    <h2>Status</h2>
+                    <img src={catPng}/>
+                    <p>Currently, I am the lead web developer for HaulrCorporation, though always looking for new opportunities and collaborations.</p>
                 </div>
-                <div className='linkBox' id='aboutBox'>
-                    <p>
-                        Besides being a full time web developer, I'm also an illustrator! I run a sticker shop and vend at local events.
-                    </p>
+                <div className='linkBox'>
+                    <h2>Values</h2>
+                    <img src={catPng}/>
+                    <p>I strive for a smooth user experience for both admins and common users alike, always learning ways to improve the app. </p>
                 </div>
-                <div className='linkBox' id='aboutBox'>
-                    <p>I am always open to new opportunities and collaborations! 
-                    </p>
+                <div className='linkBox'>
+                    <h2>Skills</h2>
+                    <img src={catPng}/>
+                    <p>My workday is balanced with React, CSS, JS, GraphQL, Apache, and more. I love to learn, and I can pick up new languages with ease.</p>
                 </div>
             </div>
             <Link src='/'>
@@ -103,63 +106,56 @@ export default function Homepage() {
             <h2>website</h2>
             </div>
             <div className='projBoxContain'>
-            <div className='projBox'>
-                <div className='imgDiv'>
-                <a href='https://haulrcorp.com/'>HaulrCorp.com</a>
-                <img src={HaulrScreen}/>
-                </div>
-                <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application</p>
-               <Collapse>
-                <ul className='tech'>
-                    <li>MongoDB</li>
-                    <li>Express</li>
-                    <li>React</li>
-                    <li>Node</li>
-                    <li>GraphQL</li>
-                </ul>
-            </Collapse>    
-            </div>
-            <div className='projBox'>
-                <div className='imgDiv'>
-                    <a href='https://strawberryboar.github.io/Meal-Assistant/'>Meal Assistant</a>
-                    <img src={MealAssistant}/>
-                 </div>
-                <p>The Meal Assistant is an app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
-                <Collapse>
-                    <ul className='tech'>
-                        <li>HTML/CSS</li>
-                        <li>JS</li>
-                        <li>jQuery & Autocomplete</li>
-                        <li>Bulma CSS Framework</li>
-                        <li>AJAX API Requests</li>
-                    </ul>
-                </Collapse>
-            </div>
-            <div className='projBox'>
-            <a href='#'>link</a>
-                <div className='imgDiv'>
+                <div className='projBox'>
+                    <div className='imgDiv'>
+                    <a href='https://haulrcorp.com/'>HaulrCorp.com</a>
                     <img src={catPng}/>
-                </div>
-                <p>peepee</p>
+                    </div>
+                    <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application.</p>
+                <Collapse>
                 <div className='techBox'>
+                        <ul className='tech'>
+                            <li>MongoDB</li>
+                            <li>Express</li>
+                            <li>React</li>
+                            <li>Node</li>
+                            <li>GraphQL</li>
+                        </ul>
+                        </div>
+                    </Collapse>    
+                </div>
+                <div className='projBox'>
+                    <div className='imgDiv'>
+                        <a href='https://strawberryboar.github.io/Meal-Assistant/'>Meal Assistant</a>
+                        <img src={catPng}/>
+                    </div>
+                    <p>An app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
                     <Collapse>
-                        <p>poopoo</p>
+                    <div className='techBox'>
+                        <ul className='tech'>
+                            <li>HTML/CSS</li>
+                            <li>JS</li>
+                            <li>jQuery & Autocomplete</li>
+                            <li>Bulma CSS Framework</li>
+                            <li>AJAX API Requests</li>
+                        </ul>
+                    </div>
                     </Collapse>
                 </div>
-            </div>
+                <div className='projBox'>
+                    <div className='imgDiv'>
+                        <a href='#'>link</a>
+                        <img src={catPng}/>
+                    </div>
+                    <p>peepee</p>
+                    <div className='techBox'>
+                        <Collapse>
+                            <p>poopoo</p>
+                        </Collapse>
+                    </div>
+                </div>
             </div>
         </div>
-        {/* <div className='projBox'>
-            <img src={catPng}/>
-            <h1>PeePee</h1>
-            <Collapse>
-                <ul>
-                    <li>pee</li>
-                    <li>pee</li>
-                </ul>
-            </Collapse>
-            
-        </div> */}
         <div className='backToTop'>
                 <Link href='/'  onClick={() => {
                     handleClick(topRef)
