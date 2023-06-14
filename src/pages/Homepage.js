@@ -13,8 +13,8 @@ import CloudAnimation from '../components/Clouds';
 import Stars from '../components/Stars.js';
 import 'animate.css';
 import Collapse from '../components/Collapse';
-import HaulrScreen from '../assets/HaulrScreen.png'
-import MealAssistant from '../assets/MealAssistant.png';
+// import HaulrScreen from '../assets/HaulrScreen.png'
+// import MealAssistant from '../assets/MealAssistant.png';
 
 
 export default function Homepage() {
@@ -74,11 +74,6 @@ export default function Homepage() {
             {/* if this div is visible, call the animation. if not, nothing */}
         <h1>About Me</h1>
             <div className='linkWrap' id='aboutWrap'>
-                <div className='linkBox' id='aboutBox'>
-                    <h2>Status</h2>
-                    <img src={catPng}/>
-                    <p>Currently, I am the lead web developer for HaulrCorporation, though always looking for new opportunities and collaborations.</p>
-                </div>
                 <div className='linkBox'>
                     <h2>Values</h2>
                     <img src={catPng}/>
@@ -88,6 +83,11 @@ export default function Homepage() {
                     <h2>Skills</h2>
                     <img src={catPng}/>
                     <p>My workday is balanced with React, CSS, JS, GraphQL, Apache, and more. I love to learn, and I can pick up new languages with ease.</p>
+                </div>
+                <div className='linkBox' id='aboutBox'>
+                    <h2>Status</h2>
+                    <img src={catPng}/>
+                    <p>Currently, I am the lead web developer for HaulrCorporation, though always looking for new opportunities and collaborations.</p>
                 </div>
             </div>
             <Link src='/'>
