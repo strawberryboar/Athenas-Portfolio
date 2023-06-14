@@ -1,6 +1,9 @@
 Footer {
-    color:white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .footerWrap {
@@ -8,19 +11,37 @@ Footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: solid black 1px;
+    width: 50%;
 }
 
 .footerBox {
-    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
     width: 25%;
+    align-items: center;
 }
 
-.footerBox a {
-    color: white;
-    text-decoration: none;
+.footerBox svg {
+    width: 100px;
+    height: 100px;
 }
 
-.footerBox a:hover {
-    color: pink;
+.footerBox:nth-child(n+2){
+    margin-left: 5%;
+  }
+
+.footerBox svg:hover {
+    transition: 0.3s;
+    scale: 1.2;
+}
+
+Footer p {
+    opacity: 50%;
+    font-size: 20px;
+}
+
+@media (max-width: 800px){
+    .footerBox svg {
+        width: 100%;
+    }
 }

@@ -1,11 +1,22 @@
 .App {
     margin: 0 auto;
 }
-* {
-    background-color: #282c34;
+
+
+.Homepage {
+  background: linear-gradient(#FB4570, #FB6B90, #FB8DA0);
+  animation: Background 10s infinite alternate;
 }
 
-.Contact, .Homepage {
+@keyframes Background {
+  0%  { top: 15dvh; background: #ff5d83;}
+  25%  { top:30dvh; background: #ff6b8d; }
+  50%  { top:50dvh; background: #ff7b9c; }
+  75%  { top:70dvh; background: #ff89a7;}
+  100% { top:75dvh; background: #fd98b0;}
+}
+
+.Contact {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,3 +25,45 @@
     align-items: center;
     margin: 0 auto;
   }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: pink;
+    cursor: pointer;
+  }
+
+@media (max-width: 800px){
+    .footerBox img {
+        width: 100%;
+    }
+
+    .Homepage p {
+      font-size: 20px;
+    }
+
+    .Homepage {
+      padding: 2%;
+    }
+    
+    /* .projBox {
+      max-height: 70dvh;
+    } */
+
+    .titles {
+      margin: 0 10%;
+    }
+    .siteWrap {
+      display: flex;
+      flex-direction:column;
+      width: 100%;
+  }
+  .siteBox:nth-child(n+2) {
+      margin-top: 3px;
+      margin-left: 0;
+    }
+    
+}

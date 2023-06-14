@@ -1,0 +1,55 @@
+.lang {
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    animation: lang 3s infinite linear;
+  }
+
+  .lang {
+    width: 100px;
+  }
+
+  #lang1 {
+    animation-name: lang;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+  }
+
+  #lang2 {
+    animation-name: lang;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+  
+  #lang3 {
+    animation-name: lang;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+  }
+
+  #lang4 {
+    animation-name: lang;
+    animation-duration: 3s;
+    animation-delay: 2s;
+  }
+
+  #lang5 {
+    animation-name: lang;
+    animation-duration: 3s;
+    animation-delay: 2.5s;
+  }
+
+  #lang6 {
+    animation-name: lang;
+    animation-duration: 3s;
+    animation-delay: 3s;
+  }
+
+  @keyframes lang {
+    0%  { top:25dvh; opacity: 0; transform: scale(0.3);}
+    25%  { top:30dvh; opacity: 50%; transform: scale(0.5);}
+    50%  { top:50dvh; opacity: 1; transform: scale(1);}
+    75%  { top:70dvh; opacity: 75%; transform: scale(0.5);}
+    100% { top:75dvh; opacity: 0; transform: scale(0.3);}
+  }

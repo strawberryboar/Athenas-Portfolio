@@ -1,0 +1,13 @@
+.date {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    opacity: 50%;
+    position: fixed;
+    padding: 4px;
+  }
+
+  .date p {
+    margin: 0;
+    text-shadow: 2px 2px 5px black;
+  }
