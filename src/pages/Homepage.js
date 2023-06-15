@@ -109,7 +109,7 @@ export default function Homepage() {
             </div> */}
             <div className='linkWrap'>
                 <div className='linkBox'>
-                    <h2>HAUL'R</h2>
+                    {/* <h2>HAUL'R</h2> */}
                     <a href='https://haulrcorp.com/'>HaulrCorp.com</a>
                     <img src={catPng}/>
                   
@@ -127,7 +127,7 @@ export default function Homepage() {
                     </Collapse>    
                 </div>
                 <div className='linkBox'>
-                    <h2>Meal Assistant</h2>
+                    {/* <h2>Meal Assistant</h2> */}
                         <a href='https://strawberryboar.github.io/Meal-Assistant/'>Meal Assistant</a>
                         <img src={catPng}/>
               
@@ -145,7 +145,7 @@ export default function Homepage() {
                     </Collapse>
                 </div>
                 <div className='linkBox'>
-                    <h2>website</h2>
+                    {/* <h2>website</h2> */}
                         <a href='#'>link</a>
                         <img src={catPng}/>
                   
