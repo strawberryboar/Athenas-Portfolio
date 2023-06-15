@@ -2,6 +2,17 @@
     margin: 0 auto;
 }
 
+p {
+  font-size: 20px;
+}
+
+li {
+  list-style-image: url('./assets/pixelheart.png');
+}
+
+p, h1, h2, span {
+  text-shadow: 2px 2px 5px #eb456b;
+}
 
 .Homepage {
   background: linear-gradient(#FB4570, #FB6B90, #FB8DA0);
@@ -20,7 +31,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-size: calc(10px + 1vmin);
     color: white;
     align-items: center;
     margin: 0 auto;
@@ -36,34 +46,3 @@
     cursor: pointer;
   }
 
-@media (max-width: 800px){
-    .footerBox img {
-        width: 100%;
-    }
-
-    .Homepage p {
-      font-size: 20px;
-    }
-
-    .Homepage {
-      padding: 2%;
-    }
-    
-    /* .projBox {
-      max-height: 70dvh;
-    } */
-
-    .titles {
-      margin: 0 10%;
-    }
-    .siteWrap {
-      display: flex;
-      flex-direction:column;
-      width: 100%;
-  }
-  .siteBox:nth-child(n+2) {
-      margin-top: 3px;
-      margin-left: 0;
-    }
-    
-}
