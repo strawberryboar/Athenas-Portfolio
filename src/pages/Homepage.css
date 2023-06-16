@@ -143,7 +143,7 @@
     opacity: 90%;
   }
 
-  .imgDiv:hover {
+  .linkBox img:hover {
     transition: 0.3s;
     filter: blur(3px);
   }
@@ -181,6 +181,14 @@
 .techBtn:hover, .downArrow svg:hover {
   scale: 1.2;
   transition: 0.3s;
+}
+
+.collapseBtns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  position: relative;
 }
 
 .resumeBox {

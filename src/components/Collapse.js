@@ -19,7 +19,7 @@ export default function Collapse(props) {
                     <DownArrow style={style}/>
             </button>
             {/* need to animate on click */}
-            <div>
+            <div className="techBox">
             {isShown && (
                 props.children
             )

@@ -20,27 +20,21 @@ import Collapse from '../components/Collapse';
 export default function Homepage() {
     // const {ref: learnRef, inView: aboutIsVisible} = useInView();
     const learnRef = useRef();
-
     const projRef = useRef();
     // const {ref: projRef, inView: projectIsVisible} = useInView();
-    
     const topRef = useRef();
     // const {ref: topRef, inView: topIsVisible} = useInView();
-
     const resRef = useRef();
 
     // className={`${projectIsVisible ? 'projects animate__animated animate__fadeInDown' : ''}`} 
     function handleClick(scrollToRef) {
         scrollToRef.current.scrollIntoView({ behavior: "smooth" });
       }
-
     const [isShown, setIsShown] = useState(false);
     const [isHover, setIsHover] = useState(false);
-
     const handleMouseEnter = () => {
         setIsHover(true);
     }
-
     const handleMouseOut = () => {
         setIsHover(false);
     }
@@ -109,54 +103,53 @@ export default function Homepage() {
             </div> */}
             <div className='linkWrap'>
                 <div className='linkBox'>
-                    {/* <h2>HAUL'R</h2> */}
+                    <h2>HAUL'R</h2>
                     <a href='https://haulrcorp.com/'>HaulrCorp.com</a>
                     <img src={catPng}/>
                   
                     <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application.</p>
-                <Collapse>
-                <div className='techBox'>
-                        <ul className='tech'>
-                            <li>MongoDB</li>
-                            <li>Express</li>
-                            <li>React</li>
-                            <li>Node</li>
-                            <li>GraphQL</li>
-                        </ul>
-                        </div>
-                    </Collapse>    
+              
                 </div>
                 <div className='linkBox'>
-                    {/* <h2>Meal Assistant</h2> */}
+                    <h2>Meal Assistant</h2>
                         <a href='https://strawberryboar.github.io/Meal-Assistant/'>Meal Assistant</a>
                         <img src={catPng}/>
               
                     <p>An app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
-                    <Collapse>
-                    <div className='techBox'>
-                        <ul className='tech'>
-                            <li>HTML/CSS</li>
-                            <li>JS</li>
-                            <li>jQuery & Autocomplete</li>
-                            <li>Bulma CSS Framework</li>
-                            <li>AJAX API Requests</li>
-                        </ul>
-                    </div>
-                    </Collapse>
+                    
                 </div>
                 <div className='linkBox'>
-                    {/* <h2>website</h2> */}
+                    <h2>website</h2>
                         <a href='#'>link</a>
                         <img src={catPng}/>
                   
                     <p>peepee</p>
-                    <div className='techBox'>
-                        <Collapse>
-                            <p>poopoo</p>
-                        </Collapse>
-                    </div>
+                       
                     </div>
                 </div>
+                <div className='collapseBtns'>
+                        <Collapse>
+                            <ul className='tech'>
+                                <li>MongoDB</li>
+                                <li>Express</li>
+                                <li>React</li>
+                                <li>Node</li>
+                                <li>GraphQL</li>
+                            </ul>
+                        </Collapse>  
+                        <Collapse>
+                            <ul className='tech'>
+                                <li>HTML/CSS</li>
+                                <li>JS</li>
+                                <li>jQuery & Autocomplete</li>
+                                <li>Bulma CSS Framework</li>
+                                <li>AJAX API Requests</li>
+                            </ul>
+                        </Collapse>
+                        <Collapse>
+                                <p>poopoo</p>
+                        </Collapse>
+                    </div>
         </div>
         <div className='backToTop'>
                 <Link href='/'  onClick={() => {
