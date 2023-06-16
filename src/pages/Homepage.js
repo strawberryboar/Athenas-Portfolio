@@ -9,6 +9,9 @@ import DateWidget from '../hooks/DateAndTime';
 import Footer from '../components/Footer';
 import { ReactComponent as DownArrow } from '../assets/DownArrow.svg';
 import { ReactComponent as UpArrowCirc } from '../assets/UpArrowCirc.svg';
+import Trust from '../assets/Trust.png'
+import Wrench from '../assets/Wrench.png'
+import Status from '../assets/Status.png'
 import CloudAnimation from '../components/Clouds';
 import Stars from '../components/Stars.js';
 import 'animate.css';
@@ -39,13 +42,6 @@ export default function Homepage() {
         setIsHover(false);
     }
 
-// case isHover(true) ? ____ : isHover(false)
-
-    // const handleMouseOut = () => {
-    //     setIsHover(false);
-    // }
-
-
     return(
     <div className="Homepage">
         <CloudAnimation />
@@ -72,17 +68,17 @@ export default function Homepage() {
             <div className='linkWrap'>
                 <div className='linkBox'>
                     <h2>Values</h2>
-                    <img src={catPng}/>
+                    <img src={Trust}/>
                     <p>I strive for a smooth user experience for both admins and common users alike, always learning ways to improve the app. </p>
                 </div>
                 <div className='linkBox'>
                     <h2>Skills</h2>
-                    <img src={catPng}/>
+                    <img src={Wrench}/>
                     <p>My workday is balanced with React, CSS, JS, GraphQL, Apache, and more. I love to learn, and I can pick up new languages with ease.</p>
                 </div>
                 <div className='linkBox'>
                     <h2>Status</h2>
-                    <img src={catPng}/>
+                    <img src={Status}/>
                     <p>Currently, I am the lead web developer for HaulrCorporation, though always looking for new opportunities and collaborations.</p>
                 </div>
             </div>
@@ -163,3 +159,9 @@ export default function Homepage() {
     )
 }
     
+
+// <a target="_blank" href="https://icons8.com/icon/112405/trust">Trust</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+// <a target="_blank" href="https://icons8.com/icon/114105/wrench">Wrench</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+// <a target="_blank" href="https://icons8.com/icon/47805/ok">Status</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
