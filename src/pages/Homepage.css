@@ -236,40 +236,30 @@
     .divBox {
       display: flex;
       flex-direction: column;
+      height: auto;
     }
 
     .Homepage {
       padding: 2px;
     }
 
-    .projects {
+    .linkWrap {
       display: flex;
       flex-direction: column;
-    }
-
-    .projBoxContain {
-      display: flex;
-      flex-direction: column;
-      max-height: 50dvh;
-    }
-
-    .projBox {
-      margin: 2% 0;
-      display: flex;
-      flex-direction: column;
-      overflow-y: auto;
     }
 
     .linkBox img {
       max-width: 60%;
     }
 
-    .linkWrap {
+    .linkBox {
+      height: 80%;
+      overflow-y: auto;
+      margin: 2% 0;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      width: 60%;
     }
-
 
     .siteWrap {
       display: flex;
