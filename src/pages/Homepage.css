@@ -222,10 +222,6 @@
 
 @media (max-width: 800px){
 
-  #greet {
-    font-size: 24px;
-  }
-
   .header img {
     width: 70%;
   }

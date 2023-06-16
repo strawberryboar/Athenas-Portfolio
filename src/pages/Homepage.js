@@ -68,17 +68,17 @@ export default function Homepage() {
             <div className='linkWrap'>
                 <div className='linkBox'>
                     <h2>Values</h2>
-                    <img src={Trust}/>
+                    <img id='aboutImg' src={Trust}/>
                     <p>I strive for a smooth user experience for both admins and common users alike, always learning ways to improve the app. </p>
                 </div>
                 <div className='linkBox'>
                     <h2>Skills</h2>
-                    <img src={Wrench}/>
+                    <img id='aboutImg' src={Wrench}/>
                     <p>My workday is balanced with React, CSS, JS, GraphQL, Apache, and more. I love to learn, and I can pick up new languages with ease.</p>
                 </div>
                 <div className='linkBox'>
                     <h2>Status</h2>
-                    <img src={Status}/>
+                    <img id='aboutImg' src={Status}/>
                     <p>Currently, I am the lead web developer for HaulrCorporation, though always looking for new opportunities and collaborations.</p>
                 </div>
             </div>
