@@ -4,7 +4,6 @@
 }
 
 .collapse button {
-  bottom: 0;
   color: white;
   background-color: transparent;
   border:white solid 2px;
@@ -83,16 +82,18 @@
     margin-top: 2%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     z-index: 1000;
     text-align: center;
     position: relative;
-    height: 100dvh;
+    height: auto;
   }
 
   .linkWrap {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
   .linkBox {
@@ -101,7 +102,6 @@
     flex-direction: column;
     width: 33%;
     padding: 1%;
-    height: 100%;
     align-items: center;
   }
 
@@ -157,6 +157,7 @@
     font-size: 22px;
     overflow-y: auto;
     padding-top: 2%;
+    position: relative;
   }
 
   .linkBtn {
@@ -177,6 +178,9 @@
   font-size: 20px;
 }
 
+#techTitle {
+  display: none;
+}
 
 .techBtn:hover, .downArrow svg:hover {
   scale: 1.2;
@@ -186,9 +190,11 @@
 .collapseBtns {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 75%;
   justify-content: space-around;
+  align-items: center;
   position: relative;
+  margin-bottom: 20%;
 }
 
 .resumeBox {
@@ -225,6 +231,10 @@
   .header img {
     width: 70%;
   }
+
+  .downArrow  {
+    display: none;
+  }
   
   .titles {
     margin: 0 10%;
@@ -260,6 +270,13 @@
       display: flex;
       flex-direction: column;
       width: 60%;
+    }
+
+    .techBox {
+      font-size: 20px;
+      position: relative;
+      max-height: 240px;
+      overflow-y: auto;
     }
 
     .siteWrap {

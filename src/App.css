@@ -10,7 +10,7 @@ li {
   list-style-image: url('./assets/pixelheart.png');
 }
 
-p, h1, h2, span {
+p, h1, h2, h3, span {
   text-shadow: 2px 2px 5px #eb456b;
 }
 
