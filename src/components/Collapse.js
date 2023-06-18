@@ -13,19 +13,19 @@ export default function Collapse(props) {
     }
 
     return(
-        <div>
-        <a
-            onClick={() => setIsShown(!isShown)}>
-                <DownArrow style={style}/>
-        </a>
-        {/* need to animate on click */}
-        <div>
-        {isShown && (
-             props.children
-        )
-           
-        }
-        </div>
+        <div className="collapse">
+            <button
+                onClick={() => setIsShown(!isShown)}>
+                    <DownArrow style={style}/>
+            </button>
+            {/* need to animate on click */}
+            <div className="techBox">
+            {isShown && (
+                props.children
+            )
+            
+            }
+            </div>
         </div>
     )
    

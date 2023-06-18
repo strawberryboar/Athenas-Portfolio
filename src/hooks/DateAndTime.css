@@ -5,6 +5,7 @@
     opacity: 50%;
     position: fixed;
     padding: 4px;
+    z-index: 99999;
   }
 
   .date p {

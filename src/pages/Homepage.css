@@ -1,29 +1,32 @@
+ html {
+  scroll-snap-type: y proximity;
+ }
+ 
  .Homepage {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 1vmin);
   color: white;
   margin: 0 auto;
 }
 
-.Homepage div {
-  z-index: 1000;
+a img:hover {
+  scale: 110%;
+  transition: 0.3s;
 }
 
-li {
-  list-style-image: url('../assets/pixelheart.png');
+.collapse button {
+  color: white;
+  background-color: transparent;
+  border:white solid 2px;
+  border-radius: 4px;
 }
 
-p {
-  font-size: 25px;
-}
-
-p, h1, h2, span {
-  text-shadow: 2px 2px 5px #eb456b;
+.collapse button:hover {
+  background-color: white;
+  color: #ff5d83;
+  scale: 1.1;
+  transition: 0.3s;
 }
   
-  .introWrap img {
+  .header img {
     max-width: 100%;
   }
 
@@ -37,6 +40,7 @@ p, h1, h2, span {
     justify-content: center;
     text-align: center;
     align-items: center;
+    scroll-snap-align: start;
   }
 
   .headerWrap h2 {
@@ -83,48 +87,62 @@ p, h1, h2, span {
   transition: 0.3s;
   scale: 1.2;
 }
-
+/* FIX HEIGHT?? */
   .divBox {
-    display: flex;
-    flex-direction: column; 
-    align-items: left;
-    padding: 2%;
-    z-index: 1000;
-  }
-
-  #divBox1 {
-    height: 100dvh;
-    text-align: center;
-    position: relative;
-  }
-
-  .linkBox {
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
+    z-index: 1000;
+    text-align: center;
+    position: relative;
+    height: auto;
+    scroll-snap-align: start;
+  }
+
+  #aboutWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80dvh;
+  }
+
+  .linkWrap {
+    padding: 0 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .linkBox {
+    z-index: 999999;
+    width: 33%;
     padding: 1%;
+    align-items: center;
+  }
+
+  #aboutBox {
+    min-height: 300px;
+  }
+
+  #workBox {
+    height: 600px;
   }
 
   .linkBox img {
     max-width: 60%;
+    opacity: 90%;
   }
 
-#aboutWrap {
-  display: flex;
-  flex-direction: row;
- justify-content: center;
- z-index: 1000;
-}
-
-  .projects {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 5%;
+  .portrait {
+    animation: portAnim 1s infinite alternate;
   }
+
+  @keyframes portAnim {
+    0% {transform: translate(0, 20px);}
+    100% { transform: translate(0, 0);}
+  }  
 
   .titles {
     display: flex;
@@ -134,18 +152,18 @@ p, h1, h2, span {
   }
 
   .projBoxContain {
-    z-index: 1000;
     display: flex;
-    flex-direction: row;
-    height: 100dvh;
-    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    max-height: 70dvh;
+    margin-bottom: 20%;
   }
 
   .projBox {
-    width: 30%;
-    margin-bottom: 2%;
+    margin: 2% 0;
     padding: 2%;
-    overflow-y: auto;
+    width: 20%;
   }
 
   .projBox img {
@@ -153,10 +171,10 @@ p, h1, h2, span {
     opacity: 90%;
   }
 
-  .imgDiv:hover {
+  /* .linkBox img:hover {
     transition: 0.3s;
     filter: blur(3px);
-  }
+  } */
 
   .imgDiv a {
     position: absolute;
@@ -167,11 +185,12 @@ p, h1, h2, span {
     font-size: 22px;
     overflow-y: auto;
     padding-top: 2%;
+    position: relative;
+    scroll-snap-align: center;
   }
 
   .linkBtn {
     position: absolute;
-
     width: 100px;
     height: 75px;
     color: white;
@@ -179,24 +198,8 @@ p, h1, h2, span {
     font-size: 20px;
 }
 
-  .backToTop svg {
-    border: 1px;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
-    opacity: 50%;
-    background-color: pink;
-    color: white;
-}
-
-.backToTop svg:hover {
-    background-color: white;
-    color: #ff5d83;
-    scale: 1.1;
-    transition: 0.3s;
+.collapseHidden {
+  display: none;
 }
 
 .techBtn {
@@ -208,8 +211,153 @@ p, h1, h2, span {
   font-size: 20px;
 }
 
+#techTitle {
+  display: none;
+}
 
-.techBtn:hover, .downArrow svg:hover {
+.techBtn:hover, .downArrow svg:hover, a:hover {
   scale: 1.2;
   transition: 0.3s;
+}
+
+a {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.collapseBtns {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.resumeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50dvh;
+  width: 100%;
+  margin-bottom: 10%;
+  scroll-snap-align: center;
+}
+
+.resumeBox a {
+  font-size: 42px;
+}
+
+.resumeBox img {
+  width: 32px;
+}
+
+.backToTop svg {
+  border: 1px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  background-color: pink;
+  color: white;
+  opacity: 75%;
+  z-index: 9999;
+}
+
+.backToTop svg:hover {
+  background-color: white;
+  color: #ff5d83;
+  scale: 1.1;
+  transition: 0.3s;
+}
+
+@media (max-width: 800px){
+
+  .header img {
+    width: 70%;
+  }
+
+  .downArrow, .collapseBtns  {
+    display: none;
+  }
+  
+  .titles {
+    margin: 0 10%;
+  }
+
+  #aboutWrap {
+    height: max-content;
+  }
+
+  #aboutBox {
+    scroll-snap-align: center;
+  }
+
+    .footerBox img {
+        width: 100%;
+    }
+
+    .divBox {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+
+    #workBox {
+      height: max-content;
+      scroll-snap-align: start;
+    }
+
+    .Homepage {
+      padding: 2px;
+    }
+
+    .linkWrap {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .linkBox img {
+      max-width: 60%;
+    }
+
+    .linkBox {
+      height: 80%;
+      margin: 5% 0;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+    }
+
+    #techTitle, .collapseHidden {
+      display:block;
+    }
+
+    .techBox {
+      font-size: 20px;
+      height: auto;
+      scroll-snap-align: center;
+    }
+
+    .resumeBox {
+      margin-top: 10%;
+    }
+
+    .siteWrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+  }
+  .siteBox:nth-child(n+2) {
+      margin-top: 3px;
+      margin-left: 0;
+    }
+
+    .backToTop svg {
+      width: 40px;
+      height: 40px;
+    }
+    
 }
