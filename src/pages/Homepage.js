@@ -65,20 +65,20 @@ export default function Homepage() {
             {/* if this div is visible, call the animation. if not, nothing */}
         <h1>About Me</h1>
             <div className='linkWrap' id='aboutWrap'>
-                <div className='linkBox'>
+                <div className='linkBox' id='aboutBox'>
                     <h2>Values</h2>
                     <img id='aboutImg' src={Trust}/>
                     <p>I strive for a smooth user experience for both admins and clients alike, always learning ways to improve my apps. </p>
                 </div>
-                <div className='linkBox'>
+                <div className='linkBox' id='aboutBox'>
                     <h2>Skills</h2>
                     <img id='aboutImg' src={Wrench}/>
-                    <p>My workday is balanced with React, JS, CSS, GraphQL, Apache, and more. I love to learn, and I can pick up new languages with ease!</p>
+                    <p>My workday is balanced with React, JS, CSS, GraphQL, Apache, and more. I love to learn, and I can pick up new languages, frameworks, and APIs with ease!</p>
                 </div>
-                <div className='linkBox'>
+                <div className='linkBox' id='aboutBox'>
                     <h2>Status</h2>
                     <img id='aboutImg' src={Status}/>
-                    <p>Currently, I am the lead web developer for HaulrCorporation, though always looking for new opportunities and collaborations.</p>
+                    <p>Currently, I am the lead web developer for HaulrCorporation. I am always looking for new opportunities and collaborations.</p>
                 </div>
             </div>
             <Link src='/'>
@@ -99,10 +99,11 @@ export default function Homepage() {
             <div className='linkWrap'>
                 <div className='linkBox' id='workBox'>
                     <h2>HAUL'R</h2>
-                    <img src={Haulr}/>
-                  
-                    <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application.</p>
-                    <a href='https://haulrcorp.com/'>HaulrCorp</a>
+                    <a href='https://haulrcorp.com/' target='__blank'>
+                        <img src={Haulr}/>
+                    </a>
+                    <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application. Features swappable languages and a role-based user experience.</p>
+                    
                     <div className='collapseHidden'>
                     <Collapse>
                             <ul className='tech'>
@@ -115,14 +116,14 @@ export default function Homepage() {
                         </Collapse>  
                     </div>
                 </div>
-                <div className='linkBox'>
+                <div className='linkBox' id='workBox'>
                     <h2>Meal Assistant</h2>
+                    <a href='https://strawberryboar.github.io/Meal-Assistant/' target='__blank'>
                         <img src={MealAssist}/>
-              
+                    </a>
                     <p>An app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
-                    <a href='https://strawberryboar.github.io/Meal-Assistant/'>Meal Assistant</a>
                     <div className='collapseHidden'>
-                    <Collapse>
+                        <Collapse>
                             <ul className='tech'>
                                 <li>HTML/CSS</li>
                                 <li>JS</li>

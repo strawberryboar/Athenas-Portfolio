@@ -5,6 +5,7 @@ Footer {
     align-items: center;
     justify-content: center;
     z-index: 99999;
+    scroll-snap-align: start;
 }
 
 .footerWrap {

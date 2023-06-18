@@ -22,7 +22,7 @@ export default function Footer() {
                 <a href='https://www.linkedin.com/in/athena-petrovich-b238321a7/' target='_blank'><Linkedin width='100px' height='100px' /></a>
                 </div>
         </div>
-        <p>&copy;peepee</p>
+        <p>&copy; 2023 Athena Petrovich</p>
     </footer>
     )
 }
