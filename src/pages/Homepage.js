@@ -17,6 +17,7 @@ import 'animate.css';
 import Collapse from '../components/Collapse';
 import Haulr from '../assets/Haulr.png'
 import MealAssist from '../assets/MealAssist.png';
+import External from '../assets/External.png';
 
 
 export default function Homepage() {
@@ -53,12 +54,12 @@ export default function Homepage() {
                 <img src={catPng} className='animate__animated animate__fadeInDown' />
                 <Greeting />
                 <h2 className='animate__animated animate__fadeInDown'>I'm a full-stack web developer.</h2>
-                <Link className='animate__animated animate__slideInDown' src='/'>
+                {/* <Link className='animate__animated animate__slideInDown' src='/'>
                     <a className='downArrow' 
                     onClick={() => handleClick(learnRef)}>
                         <DownArrow />
                     </a>
-                </Link>
+                </Link> */}
             </header>
         </div>
         <div className='divBox' id='divBox1' ref={learnRef}>
@@ -81,13 +82,13 @@ export default function Homepage() {
                     <p>Currently, I am the lead web developer for HaulrCorporation. I am always looking for new opportunities and collaborations.</p>
                 </div>
             </div>
-            <Link src='/'>
+            {/* <Link src='/'>
                 <a className='downArrow' onClick={() => {
                     handleClick(projRef)
                 }}>
                 <DownArrow />
                 </a>
-            </Link>
+            </Link> */}
         </div>
         <div className='divBox' ref={projRef}>
             <h1>My Work</h1>
@@ -169,7 +170,10 @@ export default function Homepage() {
                         </Collapse> */}
                     </div>
                 <div className='resumeBox'>
-                    <a href='https://docs.google.com/document/d/1Sw3tcfoq1E4ItfYqsVsgJNZ6EwO4Pujsn6BnkyGApwM/edit?usp=sharing' target='__blank'>My Resume</a>
+                    <a href='https://docs.google.com/document/d/1Sw3tcfoq1E4ItfYqsVsgJNZ6EwO4Pujsn6BnkyGApwM/edit?usp=sharing' target='__blank'>
+                        My Resume&nbsp;
+                        <img src={External} className='resumeImg'/>
+                        </a>
                 </div>
         </div>
         <div className='backToTop'>
@@ -190,3 +194,5 @@ export default function Homepage() {
 // <a target="_blank" href="https://icons8.com/icon/114105/wrench">Wrench</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 // <a target="_blank" href="https://icons8.com/icon/47805/ok">Status</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+// <a target="_blank" href="https://icons8.com/icon/97yMswDv6EGq/external">External</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
