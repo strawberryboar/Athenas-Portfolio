@@ -4,7 +4,6 @@ import catPng from '../assets/cat.png';
 import { Link } from 'react-router-dom';
 import './Homepage.css';
 import Greeting from '../components/Greeting';
-import LinkButton from '../components/LinkButton';
 import DateWidget from '../hooks/DateAndTime';
 import Footer from '../components/Footer';
 import { ReactComponent as DownArrow } from '../assets/DownArrow.svg';
@@ -16,8 +15,8 @@ import CloudAnimation from '../components/Clouds';
 import Stars from '../components/Stars.js';
 import 'animate.css';
 import Collapse from '../components/Collapse';
-// import HaulrScreen from '../assets/HaulrScreen.png'
-// import MealAssistant from '../assets/MealAssistant.png';
+import Haulr from '../assets/Haulr.png'
+import MealAssist from '../assets/MealAssist.png';
 
 
 export default function Homepage() {
@@ -65,7 +64,7 @@ export default function Homepage() {
         <div className='divBox' id='divBox1' ref={learnRef}>
             {/* if this div is visible, call the animation. if not, nothing */}
         <h1>About Me</h1>
-            <div className='linkWrap'>
+            <div className='linkWrap' id='aboutWrap'>
                 <div className='linkBox'>
                     <h2>Values</h2>
                     <img id='aboutImg' src={Trust}/>
@@ -98,21 +97,41 @@ export default function Homepage() {
                 <h2>website</h2>
             </div> */}
             <div className='linkWrap'>
-                <div className='linkBox'>
+                <div className='linkBox' id='workBox'>
                     <h2>HAUL'R</h2>
-                    <a href='https://haulrcorp.com/'>HaulrCorp.com</a>
-                    <img src={catPng}/>
+                    <img src={Haulr}/>
                   
                     <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application.</p>
-              
+                    <a href='https://haulrcorp.com/'>HaulrCorp</a>
+                    <div className='collapseHidden'>
+                    <Collapse>
+                            <ul className='tech'>
+                                <li>MongoDB</li>
+                                <li>Express</li>
+                                <li>React</li>
+                                <li>Node</li>
+                                <li>GraphQL</li>
+                            </ul>
+                        </Collapse>  
+                    </div>
                 </div>
                 <div className='linkBox'>
                     <h2>Meal Assistant</h2>
-                        <a href='https://strawberryboar.github.io/Meal-Assistant/'>Meal Assistant</a>
-                        <img src={catPng}/>
+                        <img src={MealAssist}/>
               
                     <p>An app that allows users to search for both food and drink recipes by name/title, search for recipes by ingredient, browse various recipes via a catalog, and save various meal recipes and cocktail drink recipes.</p>
-                    
+                    <a href='https://strawberryboar.github.io/Meal-Assistant/'>Meal Assistant</a>
+                    <div className='collapseHidden'>
+                    <Collapse>
+                            <ul className='tech'>
+                                <li>HTML/CSS</li>
+                                <li>JS</li>
+                                <li>jQuery & Autocomplete</li>
+                                <li>Bulma CSS Framework</li>
+                                <li>AJAX API Requests</li>
+                            </ul>
+                        </Collapse>
+                    </div>
                 </div>
                 {/* <div className='linkBox'>
                     <h2>website</h2>
@@ -148,6 +167,9 @@ export default function Homepage() {
                                 <p>poopoo</p>
                         </Collapse> */}
                     </div>
+                <div className='resumeBox'>
+                    <a href='https://docs.google.com/document/d/1Sw3tcfoq1E4ItfYqsVsgJNZ6EwO4Pujsn6BnkyGApwM/edit?usp=sharing' target='__blank'>My Resume</a>
+                </div>
         </div>
         <div className='backToTop'>
                 <Link href='/'  onClick={() => {

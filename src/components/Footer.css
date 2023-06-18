@@ -4,6 +4,7 @@ Footer {
     text-align: center;
     align-items: center;
     justify-content: center;
+    z-index: 99999;
 }
 
 .footerWrap {
@@ -12,6 +13,7 @@ Footer {
     align-items: center;
     justify-content: center;
     width: 50%;
+    z-index: 99999;
 }
 
 /* .footerBox {
@@ -24,6 +26,7 @@ Footer {
 .footerBox svg {
     width: 100px;
     height: 100px;
+    z-index: 99999;
 }
 
 .footerBox:nth-child(n+2){

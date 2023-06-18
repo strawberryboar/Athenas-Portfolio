@@ -89,6 +89,10 @@
     height: auto;
   }
 
+  #aboutWrap {
+    margin-bottom: 20%;
+  }
+
   .linkWrap {
     display: flex;
     flex-direction: row;
@@ -105,8 +109,14 @@
     align-items: center;
   }
 
+  #workBox {
+    max-height: 500px;
+    margin-bottom: 10%;
+  }
+
   .linkBox img {
     max-width: 60%;
+    opacity: 90%;
   }
 
   /* .projects {
@@ -143,10 +153,10 @@
     opacity: 90%;
   }
 
-  .linkBox img:hover {
+  /* .linkBox img:hover {
     transition: 0.3s;
     filter: blur(3px);
-  }
+  } */
 
   .imgDiv a {
     position: absolute;
@@ -169,6 +179,10 @@
     font-size: 20px;
 }
 
+.collapseHidden {
+  display: none;
+}
+
 .techBtn {
   width: 100%;
   height: 50px;
@@ -182,9 +196,14 @@
   display: none;
 }
 
-.techBtn:hover, .downArrow svg:hover {
+.techBtn:hover, .downArrow svg:hover, a:hover {
   scale: 1.2;
   transition: 0.3s;
+}
+
+a {
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .collapseBtns {
@@ -198,12 +217,14 @@
 }
 
 .resumeBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  height: 100dvh;
+  margin-bottom: 20%;
 }
+
+.resumeBox a {
+  font-size: 42px;
+}
+
+
 
 .backToTop svg {
   border: 1px;
@@ -232,7 +253,7 @@
     width: 70%;
   }
 
-  .downArrow  {
+  .downArrow, .collapseBtns  {
     display: none;
   }
   
@@ -250,6 +271,10 @@
       height: auto;
     }
 
+    #workBox {
+      max-height: max-content;
+    }
+
     .Homepage {
       padding: 2px;
     }
@@ -265,18 +290,23 @@
 
     .linkBox {
       height: 80%;
-      overflow-y: auto;
-      margin: 2% 0;
+      margin: 5% 0;
       display: flex;
       flex-direction: column;
       width: 60%;
     }
 
+    #techTitle, .collapseHidden {
+      display:block;
+    }
+
     .techBox {
       font-size: 20px;
-      position: relative;
-      max-height: 240px;
-      overflow-y: auto;
+      height: auto;
+    }
+
+    .resumeBox {
+      margin-top: 10%;
     }
 
     .siteWrap {
