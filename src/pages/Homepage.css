@@ -135,12 +135,14 @@ a img:hover {
     opacity: 90%;
   }
 
-  /* .projects {
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 5%;
-  } */
+  .portrait {
+    animation: portAnim 1s infinite alternate;
+  }
+
+  @keyframes portAnim {
+    0% {transform: translate(0, 20px);}
+    100% { transform: translate(0, 0);}
+  }  
 
   .titles {
     display: flex;
@@ -184,6 +186,7 @@ a img:hover {
     overflow-y: auto;
     padding-top: 2%;
     position: relative;
+    scroll-snap-align: center;
   }
 
   .linkBtn {
@@ -303,7 +306,7 @@ a {
     }
 
     #workBox {
-      max-height: max-content;
+      height: max-content;
       scroll-snap-align: start;
     }
 
@@ -335,6 +338,7 @@ a {
     .techBox {
       font-size: 20px;
       height: auto;
+      scroll-snap-align: center;
     }
 
     .resumeBox {

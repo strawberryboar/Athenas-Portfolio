@@ -18,6 +18,7 @@ import Collapse from '../components/Collapse';
 import Haulr from '../assets/Haulr.png'
 import MealAssist from '../assets/MealAssist.png';
 import External from '../assets/External.png';
+import Portrait from '../assets/Portrait.png';
 
 
 export default function Homepage() {
@@ -51,7 +52,8 @@ export default function Homepage() {
         {/* this scrollinto view is causing a bug */}
         <div className='headerWrap' ref={topRef}>
             <header className='header'>
-                <img src={catPng} className='animate__animated animate__fadeInDown' />
+            {/* <img src={Portrait} className='animate__animated animate__fadeInDown portrait' /> */}
+                <img src={Portrait} className='portrait' />
                 <Greeting />
                 <h2 className='animate__animated animate__fadeInDown'>I'm a full-stack web developer.</h2>
                 {/* <Link className='animate__animated animate__slideInDown' src='/'>
@@ -69,7 +71,7 @@ export default function Homepage() {
                 <div className='linkBox' id='aboutBox'>
                     <h2>Values</h2>
                     <img id='aboutImg' src={Trust}/>
-                    <p>I strive for a smooth user experience for both admins and clients alike, always learning ways to improve my apps. </p>
+                    <p>I strive for a smooth user experience for both admins and clients alike, always learning ways to improve my apps. Every detail matters to me.</p>
                 </div>
                 <div className='linkBox' id='aboutBox'>
                     <h2>Skills</h2>
@@ -79,7 +81,7 @@ export default function Homepage() {
                 <div className='linkBox' id='aboutBox'>
                     <h2>Status</h2>
                     <img id='aboutImg' src={Status}/>
-                    <p>Currently, I am the lead web developer for HaulrCorporation. I am always looking for new opportunities and collaborations.</p>
+                    <p>I am actively looking for new opportunities and collaborations!</p>
                 </div>
             </div>
             {/* <Link src='/'>
@@ -103,7 +105,7 @@ export default function Homepage() {
                     <a href='https://haulrcorp.com/' target='__blank'>
                         <img src={Haulr}/>
                     </a>
-                    <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application. Features swappable languages and a role-based user experience.</p>
+                    <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application. Features swappable languages and delivers a permission-based user experience.</p>
                     
                     <div className='collapseHidden'>
                     <Collapse>
