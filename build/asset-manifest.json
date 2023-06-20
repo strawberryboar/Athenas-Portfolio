@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Athenas-Portfolio/static/css/main.917d4b22.css",
+    "main.js": "/Athenas-Portfolio/static/js/main.9bc95b41.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Athenas-Portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/cat.png": "/Athenas-Portfolio/static/media/cat.7b1815b95c4d1a46a45e.png",
+    "static/media/MealAssist.png": "/Athenas-Portfolio/static/media/MealAssist.072af2086f6def4f924b.png",
+    "static/media/Haulr.png": "/Athenas-Portfolio/static/media/Haulr.e786056219a08770a4e3.png",
+    "static/media/Portrait.png": "/Athenas-Portfolio/static/media/Portrait.014261f13da265faf0df.png",
+    "static/media/Cloud.svg": "/Athenas-Portfolio/static/media/Cloud.ffb9aae4175743b39a1d7749dfbe001b.svg",
+    "static/media/Star1.svg": "/Athenas-Portfolio/static/media/Star1.88044d73ad1e5ae4fe5114a797616378.svg",
+    "static/media/Star2.svg": "/Athenas-Portfolio/static/media/Star2.b674af822153360b8882bbea05a9c6f7.svg",
+    "index.html": "/Athenas-Portfolio/index.html",
+    "static/media/Github1.svg": "/Athenas-Portfolio/static/media/Github1.9d8e9e4b908a267ad21370b1f2fc6b19.svg",
+    "static/media/Twitter1.svg": "/Athenas-Portfolio/static/media/Twitter1.7d129f932df2512a407b956a90ed8d22.svg",
+    "static/media/Linkedin1.svg": "/Athenas-Portfolio/static/media/Linkedin1.ebbd0ae3de58e0cdb430913efaea23cd.svg",
+    "static/media/Email1.svg": "/Athenas-Portfolio/static/media/Email1.31cb35b5ecebb7b5a8258d51e79fe441.svg",
+    "static/media/UpArrowCirc.svg": "/Athenas-Portfolio/static/media/UpArrowCirc.c1a12d9437b7a225f04b224b016d8819.svg",
+    "static/media/DownArrow.svg": "/Athenas-Portfolio/static/media/DownArrow.cb28da22a0b24dc4c2eb9f0e9563d594.svg",
+    "static/media/UpArrow.svg": "/Athenas-Portfolio/static/media/UpArrow.22cacf5b6ae3b273ac166a16b30b7d74.svg",
+    "main.917d4b22.css.map": "/Athenas-Portfolio/static/css/main.917d4b22.css.map",
+    "main.9bc95b41.js.map": "/Athenas-Portfolio/static/js/main.9bc95b41.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Athenas-Portfolio/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.917d4b22.css",
+    "static/js/main.9bc95b41.js"
+  ]
+}
