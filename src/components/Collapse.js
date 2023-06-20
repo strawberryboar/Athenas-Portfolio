@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { ReactComponent as DownArrow } from '../assets/DownArrow.svg';
-import { ReactComponent as UpArrow } from '../assets/UpArrow.svg';
-
 
 export default function Collapse(props) {
 

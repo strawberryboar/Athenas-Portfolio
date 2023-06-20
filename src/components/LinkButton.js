@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './LinkButton.css';
-import catPng from '../assets/cat.png';
 import Collapse from "./Collapse";
 
 export default function LinkButton(props) {

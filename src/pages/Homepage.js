@@ -1,12 +1,9 @@
 import React, { useRef, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
-import catPng from '../assets/cat.png';
 import { Link } from 'react-router-dom';
 import './Homepage.css';
 import Greeting from '../components/Greeting';
 import DateWidget from '../hooks/DateAndTime';
 import Footer from '../components/Footer';
-import { ReactComponent as DownArrow } from '../assets/DownArrow.svg';
 import { ReactComponent as UpArrowCirc } from '../assets/UpArrowCirc.svg';
 import Trust from '../assets/Trust.png'
 import Wrench from '../assets/Wrench.png'
