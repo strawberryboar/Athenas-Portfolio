@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Athenas-Portfolio/static/css/main.917d4b22.css",
-    "main.js": "/Athenas-Portfolio/static/js/main.2ae227a7.js",
+    "main.js": "/Athenas-Portfolio/static/js/main.88412a77.js",
     "static/js/787.28cb0dcd.chunk.js": "/Athenas-Portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/cat.png": "/Athenas-Portfolio/static/media/cat.7b1815b95c4d1a46a45e.png",
     "static/media/MealAssist.png": "/Athenas-Portfolio/static/media/MealAssist.072af2086f6def4f924b.png",
@@ -19,11 +19,11 @@
     "static/media/DownArrow.svg": "/Athenas-Portfolio/static/media/DownArrow.cb28da22a0b24dc4c2eb9f0e9563d594.svg",
     "static/media/UpArrow.svg": "/Athenas-Portfolio/static/media/UpArrow.22cacf5b6ae3b273ac166a16b30b7d74.svg",
     "main.917d4b22.css.map": "/Athenas-Portfolio/static/css/main.917d4b22.css.map",
-    "main.2ae227a7.js.map": "/Athenas-Portfolio/static/js/main.2ae227a7.js.map",
+    "main.88412a77.js.map": "/Athenas-Portfolio/static/js/main.88412a77.js.map",
     "787.28cb0dcd.chunk.js.map": "/Athenas-Portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.917d4b22.css",
-    "static/js/main.2ae227a7.js"
+    "static/js/main.88412a77.js"
   ]
 }
