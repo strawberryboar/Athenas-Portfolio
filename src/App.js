@@ -10,8 +10,6 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/socials' element={<Socials/>}/>
       </Routes>
     </Router>
     </>
