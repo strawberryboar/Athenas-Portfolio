@@ -248,8 +248,13 @@ a {
   font-size: 42px;
 }
 
-.resumeBox img {
+.resumeBox svg {
   width: 32px;
+  fill: white;
+}
+
+.hideArrow {
+  display: none;
 }
 
 .backToTop svg {

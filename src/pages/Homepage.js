@@ -16,6 +16,8 @@ import Haulr from '../assets/Haulr.png'
 import MealAssist from '../assets/MealAssist.png';
 import External from '../assets/External.png';
 import Portrait from '../assets/Portrait.png';
+import Resume from '../assets/Resume.pdf';
+import { ReactComponent as Download} from '../assets/download.svg';
 
 
 export default function Homepage() {
@@ -68,17 +70,17 @@ export default function Homepage() {
                 <div className='linkBox' id='aboutBox'>
                     <h2>Values</h2>
                     <img id='aboutImg' src={Trust}/>
-                    <p>I strive for a smooth user experience for both admins and clients alike, always learning ways to improve my apps. Every detail matters to me.</p>
+                    <p>I strive for a smooth user experience for clients and teammates, innovating new ways to improve my apps and my code. <br />Every detail matters to me; professional app structures, practices, accessibility, and privacy code of conduct are always my priority. </p>
                 </div>
                 <div className='linkBox' id='aboutBox'>
                     <h2>Skills</h2>
                     <img id='aboutImg' src={Wrench}/>
-                    <p>My workday is balanced with React, JS, CSS, GraphQL, Apache, and more. I love to learn, and I can pick up new languages, frameworks, and APIs with ease!</p>
+                    <p>My full stack skillset is balanced with React, JS, Express, Node, SQL, and more. I have experience in Scrum-Agile environments. <br />I love to learn, and I can pick up new languages, frameworks, and APIs with ease. To see my full stack, see my resume below.</p>
                 </div>
                 <div className='linkBox' id='aboutBox'>
                     <h2>Status</h2>
                     <img id='aboutImg' src={Status}/>
-                    <p>I am actively looking for new opportunities and collaborations!</p>
+                    <p>I am actively looking for new opportunities and collaborations!<br /> In my free time, I am working on a social media project that uses Next.js, Node.js, User Authentication, and dynamic data-fetching with PostgreSQL.</p>
                 </div>
             </div>
             {/* <Link src='/'>
@@ -102,7 +104,7 @@ export default function Homepage() {
                     <a href='https://haulrcorp.com/' target='__blank'>
                         <img src={Haulr}/>
                     </a>
-                    <p>MERN stack site that's hosted on an AWS EC2 instance running Ubuntu and Apache, sharing the same servers as the HAUL'R iOS application. Features swappable languages and delivers a permission-based user experience.</p>
+                    <p>Solely responsible for developing the MERN stack app hosted on an AWS C2 Instance, version controlled with Git. Features swappable languages and delivers a permission-based user experience.</p>
                     
                     <div className='collapseHidden'>
                     <Collapse>
@@ -134,14 +136,18 @@ export default function Homepage() {
                         </Collapse>
                     </div>
                 </div>
-                {/* <div className='linkBox'>
-                    <h2>website</h2>
-                        <a href='#'>link</a>
-                        <img src={catPng}/>
+                {/* <div className='linkBox' id='workBox'>
+                    <h2>More uploading soon...</h2> */}
+                        {/* <a href='#'>link</a> */}
+                        {/* <img src={catPng}/> */}
                   
-                    <p>peepee</p>
-                       
+                    {/* <p>peepee</p> */}
+                    {/* <div className='hideArrow collapseHidden'>
+                        <Collapse>
+                            <p>W.I.P</p>
+                        </Collapse>
                     </div> */}
+                    {/* </div> */}
                 </div>
                 <div className='collapseBtns'>
                         <Collapse>
@@ -165,13 +171,17 @@ export default function Homepage() {
                             </ul>
                         </Collapse>
                         {/* <Collapse>
-                                <p>poopoo</p>
+                                <p>W.I.P</p>
                         </Collapse> */}
                     </div>
+                    <h2>More projects deploying soon...</h2>
                 <div className='resumeBox'>
-                    <a href='https://docs.google.com/document/d/1Sw3tcfoq1E4ItfYqsVsgJNZ6EwO4Pujsn6BnkyGApwM/edit?usp=sharing' target='__blank'>
+                    <a href={Resume} 
+                    target='__blank'
+                    download='Resume'
+                    rel="noopener noreferrer">
                         My Resume&nbsp;
-                        <img src={External} className='resumeImg'/>
+                        <Download className='resumeImg'/>
                         </a>
                 </div>
         </div>
@@ -195,3 +205,5 @@ export default function Homepage() {
 // <a target="_blank" href="https://icons8.com/icon/47805/ok">Status</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 // <a target="_blank" href="https://icons8.com/icon/97yMswDv6EGq/external">External</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+// <a href="https://www.flaticon.com/free-icons/save" title="save icons">Save icons created by mavadee - Flaticon</a>
