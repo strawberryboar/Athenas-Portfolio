@@ -54,7 +54,7 @@ export default function Homepage() {
             {/* <img src={Portrait} className='animate__animated animate__fadeInDown portrait' /> */}
                 <img src={Portrait} className='portrait' />
                 <Greeting />
-                <h2 className='animate__animated animate__fadeInDown'>I'm a full-stack web developer.</h2>
+                <h2 className='animate__animated animate__fadeInDown'>I'm a full-stack  developer.</h2>
                 {/* <Link className='animate__animated animate__slideInDown' src='/'>
                     <a className='downArrow' 
                     onClick={() => handleClick(learnRef)}>
