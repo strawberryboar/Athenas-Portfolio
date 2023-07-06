@@ -14,7 +14,7 @@ import 'animate.css';
 import Collapse from '../components/Collapse';
 import Haulr from '../assets/Haulr.png'
 import MealAssist from '../assets/MealAssist.png';
-import External from '../assets/External.png';
+import Dream from '../assets/Dream.png';
 import Portrait from '../assets/Portrait.png';
 import Resume from '../assets/Resume.pdf';
 import { ReactComponent as Download} from '../assets/download.svg';
@@ -119,6 +119,27 @@ export default function Homepage() {
                     </div>
                 </div>
                 <div className='linkBox' id='workBox'>
+                    <h2>Dream</h2>
+                        <a href='https://dream-strawberryboar.vercel.app/'
+                        target='__blank'>
+                         <img src={Dream}/>
+                        </a>
+                    <p>An experimental app created with Vite, using the OpenAi API to generate user-prompted images. Users can purchase OpenAi tokens through the integrated Stripe API to generate more images.</p>
+                    <div className='collapseHidden'>
+                        <Collapse>
+                            <ul className='tech'>
+                                <li>Stripe</li>
+                                <li>OpenAi</li>
+                                <li>Express</li>
+                                <li>JS/JSON</li>
+                                <li>Thunder Client</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </Collapse>
+                    </div>
+                    </div>
+                
+                <div className='linkBox' id='workBox'>
                     <h2>Meal Assistant</h2>
                     <a href='https://strawberryboar.github.io/Meal-Assistant/' target='__blank'>
                         <img src={MealAssist}/>
@@ -136,18 +157,6 @@ export default function Homepage() {
                         </Collapse>
                     </div>
                 </div>
-                {/* <div className='linkBox' id='workBox'>
-                    <h2>More uploading soon...</h2> */}
-                        {/* <a href='#'>link</a> */}
-                        {/* <img src={catPng}/> */}
-                  
-                    {/* <p>peepee</p> */}
-                    {/* <div className='hideArrow collapseHidden'>
-                        <Collapse>
-                            <p>W.I.P</p>
-                        </Collapse>
-                    </div> */}
-                    {/* </div> */}
                 </div>
                 <div className='collapseBtns'>
                         <Collapse>
@@ -161,6 +170,16 @@ export default function Homepage() {
                             </ul>
                         </Collapse>  
                         <Collapse>
+                            <ul className='tech'>
+                                <li>Stripe</li>
+                                <li>OpenAi</li>
+                                <li>Express</li>
+                                <li>JS/JSON</li>
+                                <li>Thunder Client</li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </Collapse>
+                        <Collapse>
                         <h3 id='techTitle'>Meal Assistant</h3>
                             <ul className='tech'>
                                 <li>HTML/CSS</li>
@@ -170,9 +189,6 @@ export default function Homepage() {
                                 <li>AJAX API Requests</li>
                             </ul>
                         </Collapse>
-                        {/* <Collapse>
-                                <p>W.I.P</p>
-                        </Collapse> */}
                     </div>
                     <h2>More projects deploying soon...</h2>
                 <div className='resumeBox'>

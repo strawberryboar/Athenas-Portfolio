@@ -130,9 +130,14 @@ a img:hover {
     height: 600px;
   }
 
+  #workBox img {
+    width: 199px;
+  }
+
   .linkBox img {
     max-width: 60%;
     opacity: 90%;
+    max-height: 294px;
   }
 
   .portrait {
@@ -168,6 +173,7 @@ a img:hover {
 
   .projBox img {
     max-width: 60%;
+    max-height: 294px;
     opacity: 90%;
   }
 
@@ -301,7 +307,7 @@ html {
   }
 
     .footerBox img {
-        width: 100%;
+      width: 100%;
     }
 
     .divBox {
@@ -324,7 +330,7 @@ html {
     }
 
     .linkBox img {
-      max-width: 60%;
+      max-width: 100%;
     }
 
     .linkBox {
