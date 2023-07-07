@@ -124,15 +124,13 @@ export default function Homepage() {
                         target='__blank'>
                          <img src={Dream}/>
                         </a>
-                    <p>An experimental app created with Vite, using the OpenAi API to generate user-prompted images. Users can purchase OpenAi tokens through the integrated Stripe API to generate more images.</p>
+                    <p>An experimental app using the OpenAi API to generate user-prompted images. Front-end handled with Vite, server handled through Express.</p>
                     <div className='collapseHidden'>
                         <Collapse>
                             <ul className='tech'>
-                                <li>Stripe</li>
                                 <li>OpenAi</li>
                                 <li>Express</li>
                                 <li>JS/JSON</li>
-                                <li>Thunder Client</li>
                                 <li>HTML/CSS</li>
                             </ul>
                         </Collapse>
